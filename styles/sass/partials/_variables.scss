@@ -1,35 +1,40 @@
-// Font-Size
-$primaryFontSize138: 13.8rem;
-$secondaryFontSize80: 8rem;
-$thirdFontSize42: 4.2rem;
-$fourthFontSize32: 3.2rem;
-$fifthFontSize26: 2.6rem;
-$sixthFontSize20: 2rem;
 
-// Line Height and Letter Spacing
-$primaryLetterSpacing1: 1px;
-$secondaryLetterSpacing: 1.1px;
+// General Styling 
+    // Font-Size
+    $primaryFontSize138: 13.8rem;
+    $secondaryFontSize80: 8rem;
+    $thirdFontSize42: 4.2rem;
+    $fourthFontSize32: 3.2rem;
+    $fifthFontSize26: 2.6rem;
+    $sixthFontSize20: 2rem;
 
-$primaryLineHeight92: 9.2rem;
-$secondaryLineHeight32: 3.2rem;
-$thirdLineHeight29: 2.9rem;
+    // Line Height and Letter Spacing
+    $primaryLetterSpacing1: 1px;
+    $secondaryLetterSpacing: 1.1px;
 
-// Font-Family
-$bodyFontFam: 'Roboto', sans-serif;
-    @mixin bodyText {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: $sixthFontSize20;
-        line-height: 3.2rem;
-    }
-$primaryFontFam: 'Playfair Display', serif;
-    @mixin primaryFontFam {
-        font-family: 'Playfair Display', serif;
-    }
+    $primaryLineHeight92: 9.2rem;
+    $secondaryLineHeight32: 3.2rem;
+    $thirdLineHeight29: 2.9rem;
 
-// Color Group
-$yellowTone: #FDFA69;
-$darkerGreenTone: #4CEEA7;
-$lighterGreenTone: #EFFDF3;
-$blackTone: #2C2C2C;
-$whiteTone: #FAFAFA;
+    // Font-Family
+    $bodyFontFam: 'Roboto', sans-serif;
+        @mixin bodyText {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: $sixthFontSize20;
+            line-height: 3.2rem;
+        }
+    $primaryFontFam: 'Playfair Display', serif;
+        @mixin primaryFontFam {
+            font-family: 'Playfair Display', serif;
+        }
+
+    // Color Group
+    $yellowTone: #FDFA69;
+    $darkerGreenTone: #4CEEA7;
+    $lighterGreenTone: #EFFDF3;
+    $blackTone: #2C2C2C;
+    $whiteTone: #FAFAFA;
+
+
+// Mixins 
