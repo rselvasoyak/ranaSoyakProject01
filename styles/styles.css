@@ -238,6 +238,7 @@ body {
   font-size: 2rem;
   color: #2C2C2C;
   line-height: 3.2rem;
+  background-color: #FAFAFA;
 }
 
 .wrapper {
@@ -315,6 +316,7 @@ h2 {
 h3 {
   font-size: 3.2rem;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 h1, ul, li, a {
@@ -359,34 +361,18 @@ header .wrapper nav {
   max-width: 100%;
   position: absolute;
   top: 3rem;
+  right: -2rem;
   z-index: 20;
 }
 header .wrapper nav a {
   padding-bottom: 10px;
 }
-header .wrapper nav .dropdownMenu {
-  visibility: hidden;
-  position: absolute;
-  right: -70%;
-  top: 100%;
-  z-index: 30;
-  width: 5vw;
-  height: 7vh;
-  max-width: 100%;
-  border: red 5px solid;
-}
-header .wrapper nav .dropdownMenu i {
-  width: 100%;
-  height: 100%;
-  color: red;
-  background-color: blue;
-  position: absolute;
-  z-index: 30;
-}
-header .headerImage {
+
+.headerImage {
   max-width: 100%;
 }
-header .headerBoxContainer {
+
+.headerBoxContainer {
   position: absolute;
   right: 0;
   bottom: -25rem;
@@ -399,10 +385,11 @@ header .headerBoxContainer {
 }
 
 .capturedInfo {
+  background-color: #EFFDF3;
   max-width: 100%;
   height: 60vh;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,4 +444,38 @@ nav li {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #4CEEA7;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blogContainer .image1Container {
+  max-width: 100%;
+}
+.blogContainer .image1Container img {
+  width: 100%;
+}
+.blogContainer .image2Container {
+  max-width: 100%;
+}
+.blogContainer .image2Container img {
+  width: 100%;
+}
+
+.infoLinksContainer {
+  background-color: #EFFDF3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.infoLinksContainer .topPicksContainer, .infoLinksContainer .communityContainer, .infoLinksContainer .blogLinkContainer, .infoLinksContainer .getInTouchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

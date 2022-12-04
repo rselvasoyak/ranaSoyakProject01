@@ -12,6 +12,7 @@ body{
     font-size: $sixthFontSize20;
     color: $blackTone;
     line-height: $secondaryLineHeight32;
+    background-color: $whiteTone;
 }
 
 .wrapper{
@@ -87,6 +88,7 @@ h2{
 h3{
     font-size: $fourthFontSize32;
     letter-spacing: $primaryLetterSpacing1;
+    margin:0;
 }
 
 h1,ul,li,a{
