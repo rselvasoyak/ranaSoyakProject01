@@ -257,6 +257,10 @@ h1, ul, li, a {
   padding: 0;
 }
 
+blockquote {
+  margin-left: 0;
+}
+
 ul {
   list-style: none;
 }
