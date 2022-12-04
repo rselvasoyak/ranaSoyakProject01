@@ -241,16 +241,32 @@ body {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 2000px;
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 blockquote {
   margin-left: 0;
 }
 
-a {
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul li {
+  margin-left: 10rem;
+}
+nav a {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -258,6 +274,9 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: inherit;
+}
+nav a:hover, nav a:focus {
+  border-bottom: #4CEEA7 3px solid;
 }
 
 img {
@@ -323,11 +342,7 @@ a {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  background-color: red;
 }
 header h1 {
   width: 100%;
@@ -335,27 +350,32 @@ header h1 {
   bottom: 15rem;
   z-index: 20;
 }
-header .headerImage {
-  max-width: 100%;
+header .wrapper {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
-header nav {
+header .wrapper nav {
+  max-width: 100%;
   position: absolute;
-  right: 0;
-  top: 2rem;
+  top: 3rem;
   z-index: 20;
 }
-header nav .dropdownMenu {
+header .wrapper nav a {
+  padding-bottom: 10px;
+}
+header .wrapper nav .dropdownMenu {
+  visibility: hidden;
   position: absolute;
-  width: 5vw;
-  height: 7vh;
   right: -70%;
   top: 100%;
   z-index: 30;
+  width: 5vw;
+  height: 7vh;
   max-width: 100%;
   border: red 5px solid;
-  visibility: hidden;
 }
-header nav .dropdownMenu i {
+header .wrapper nav .dropdownMenu i {
   width: 100%;
   height: 100%;
   color: red;
@@ -363,13 +383,78 @@ header nav .dropdownMenu i {
   position: absolute;
   z-index: 30;
 }
+header .headerImage {
+  max-width: 100%;
+}
 header .headerBoxContainer {
   position: absolute;
   right: 0;
   bottom: -25rem;
   z-index: 10;
   max-width: 100%;
+  width: 48vw;
   border-top: 60px solid #FDFA69;
   border-bottom: 60px solid #FDFA69;
   border-left: 50px solid #FDFA69;
+}
+
+.capturedInfo {
+  max-width: 100%;
+  height: 60vh;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.capturedInfo .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.capturedInfo .wrapper p {
+  width: 70%;
+}
+.capturedInfo .wrapper a {
+  margin-top: 1%;
+}
+.capturedInfo h2 {
+  text-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav li {
+  margin: 2rem;
+}
+
+.findOutMore {
+  text-transform: uppercase;
+  width: 10%;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #4CEEA7;
+}
+
+.readMore {
+  text-transform: uppercase;
+  width: 10%;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #4CEEA7;
 }

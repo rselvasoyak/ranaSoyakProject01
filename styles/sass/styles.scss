@@ -1,4 +1,7 @@
 @use "./partials/variables" as *;
 @use "./partials/setup";
 @use "./partials/typography";
-@use "./partials/indexHeader";
+@use "./partials/_indexFiles/indexHeader";
+@use "./partials/_indexFiles/whatIsCaptured";
+@use "./partials/baseStyle";
+@use "./partials/_indexFiles/blogSection";
