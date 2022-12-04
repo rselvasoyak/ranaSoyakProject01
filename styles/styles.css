@@ -245,11 +245,24 @@ body {
   margin: 0 auto;
 }
 
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
 h1 {
   font-size: 13.8rem;
-  font-family: "Playfair Display", serif;
   font-weight: 700;
   text-align: center;
+}
+
+.contactH1, .blogH1 {
+  font-size: 8rem;
+  line-height: 9.2rem;
+}
+
+h2 {
+  font-size: 8rem;
 }
 
 h1, ul, li, a {

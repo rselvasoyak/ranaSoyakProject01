@@ -19,11 +19,24 @@ body{
   margin: 0 auto;
 }
 
+h1,h2,h3 {
+    font-family: $primaryFontFam;
+    text-transform: uppercase;
+}
+
 h1{
     font-size: $primaryFontSize138;
-    font-family: $primaryFontFam;
     font-weight: 700;
     text-align: center;
+}
+
+.contactH1, .blogH1 {
+    font-size: $secondaryFontSize80;
+    line-height: $primaryLineHeight92;
+}
+
+h2{
+    font-size: $secondaryFontSize80;
 }
 
 h1,ul,li,a{
