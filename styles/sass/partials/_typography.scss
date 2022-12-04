@@ -8,6 +8,7 @@ html {
 
 body{
     font-family: $bodyFontFam;
+    font-weight: 400;
     font-size: $sixthFontSize20;
     color: $blackTone;
     line-height: $secondaryLineHeight32;
@@ -19,6 +20,33 @@ body{
   margin: 0 auto;
 }
 
+blockquote{
+    margin-left: 0;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+img {
+    display: block;
+     width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+
 h1,h2,h3 {
     font-family: $primaryFontFam;
     text-transform: uppercase;
@@ -27,16 +55,24 @@ h1,h2,h3 {
 h1{
     font-size: $primaryFontSize138;
     font-weight: 700;
+    font-style: italic;
     text-align: center;
 }
 
 .contactH1, .blogH1 {
     font-size: $secondaryFontSize80;
     line-height: $primaryLineHeight92;
+    text-transform: uppercase;
 }
 
 h2{
-    font-size: $secondaryFontSize80;
+    font-size: $thirdFontSize42;
+    letter-spacing: $primaryLetterSpacing1;
+}
+
+h3{
+    font-size: $fourthFontSize32;
+    letter-spacing: $primaryLetterSpacing1;
 }
 
 h1,ul,li,a{
@@ -50,6 +86,7 @@ blockquote{
 
 ul{
     list-style: none;
+    display: flex;
 }
 
 a{
