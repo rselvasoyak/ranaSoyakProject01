@@ -336,26 +336,55 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  background-color: red;
 }
 header h1 {
+  width: 100%;
   position: absolute;
-  z-index: 10;
+  bottom: 15rem;
+  z-index: 20;
 }
-header .headerContainer1, header .headerContainer2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-header .imageContainer {
-  width: 50%;
+header .headerImage {
   max-width: 100%;
 }
-header .imageContainer img {
+header .headerImage img {
+  width: 100%;
+}
+header nav {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  z-index: 20;
+}
+header nav .dropdownMenu {
+  position: absolute;
+  width: 5vw;
+  height: 7vh;
+  right: -70%;
+  top: 100%;
+  z-index: 30;
+  max-width: 100%;
+  border: red 5px solid;
+  visibility: hidden;
+}
+header nav .dropdownMenu i {
+  width: 100%;
+  height: 100%;
+  color: red;
+  background-color: blue;
+  position: absolute;
+  z-index: 30;
+}
+header .headerBoxContainer {
+  position: absolute;
+  right: 0;
+  bottom: -25rem;
+  z-index: 10;
+  max-width: 100%;
+  border-top: 60px solid #FDFA69;
+  border-bottom: 60px solid #FDFA69;
+  border-left: 50px solid #FDFA69;
+}
+header .headerBoxContainer img {
   width: 100%;
 }
