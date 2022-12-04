@@ -265,10 +265,6 @@ img {
   width: 100%;
 }
 
-ul {
-  list-style: none;
-}
-
 h1, ul, li, a {
   margin: 0;
   padding: 0;
@@ -326,11 +322,6 @@ a {
   text-align: center;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,9 +337,6 @@ header h1 {
 }
 header .headerImage {
   max-width: 100%;
-}
-header .headerImage img {
-  width: 100%;
 }
 header nav {
   position: absolute;
@@ -384,7 +372,4 @@ header .headerBoxContainer {
   border-top: 60px solid #FDFA69;
   border-bottom: 60px solid #FDFA69;
   border-left: 50px solid #FDFA69;
-}
-header .headerBoxContainer img {
-  width: 100%;
 }

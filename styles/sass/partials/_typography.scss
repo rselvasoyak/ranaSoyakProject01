@@ -38,10 +38,6 @@ img {
      width: 100%;
 }
 
-ul{
-    list-style: none;
-}
-
 h1,ul,li,a{
     margin: 0;
     padding: 0;
@@ -59,11 +55,11 @@ h1{
     text-align: center;
 }
 
-.contactH1, .blogH1 {
-    font-size: $secondaryFontSize80;
-    line-height: $primaryLineHeight92;
-    text-transform: uppercase;
-}
+    .contactH1, .blogH1 {
+        font-size: $secondaryFontSize80;
+        line-height: $primaryLineHeight92;
+        text-transform: uppercase;
+    }
 
 h2{
     font-size: $thirdFontSize42;
@@ -96,7 +92,3 @@ a{
     text-align: center;
 }
 
-img {
-    display: block;
-     width: 100%;
-}
