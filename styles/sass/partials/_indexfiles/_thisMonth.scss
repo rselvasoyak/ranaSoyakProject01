@@ -1,0 +1,12 @@
+@use "../../partials/variables" as*;
+
+.thisMonthProfile {
+    display: flex;
+    .profileImageContainer{
+        flex-basis: 40%;
+        max-width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

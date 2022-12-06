@@ -18,16 +18,20 @@
 
     // Font-Family
     $bodyFontFam: 'Roboto', sans-serif;
-        @mixin bodyText {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: $sixthFontSize20;
-            line-height: 3.2rem;
-        }
+        // @mixin bodyText ($sixthFontSize20) {
+        //     font-family: 'Roboto', sans-serif;
+        //     font-weight: 400;
+        //     font-size: $sixthFontSize20;
+        //     line-height: 3.2rem;
+        // }
+
+        // @include bodyText (2rem) {
+        //     background-color: #4CEEA7;
+        // }
     $primaryFontFam: 'Playfair Display', serif;
-        @mixin primaryFontFam {
-            font-family: 'Playfair Display', serif;
-        }
+        // @mixin primaryFontFam () {
+        //     font-family: 'Playfair Display', serif;
+        // }
 
     // Color Group
     $yellowTone: #FDFA69;
