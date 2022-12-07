@@ -1,1 +1,8 @@
 @use "../abstract/variables" as *;
+
+nav{
+    display: flex;
+    li{
+        margin: 2rem;
+    }
+}
