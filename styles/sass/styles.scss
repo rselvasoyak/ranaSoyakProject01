@@ -1,6 +1,8 @@
-@use "./partials/variables" as *;
-@use "./partials/setup";
-@use "./partials/typography";
+
+
+@use "./partials/abstract/variables" as *;
+@use "./partials/core/setup";
+@use "./partials/core/typography";
 
 // Pages Links
     @use "./partials/pages/home";
@@ -9,11 +11,8 @@
 
 // Abstract Components Links 
     @use "./partials/abstract/mixins";
-    @use "./partials/abstract/variables";
 
 // Core Components Links 
-    @use "./partials/core/setup";
-    @use "./partials/core/typography";
 
 // Layout Components 
     @use "./partials/layout/header";
