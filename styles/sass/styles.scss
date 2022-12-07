@@ -7,6 +7,18 @@
     @use "./partials/pages/contact";
     @use "./partials/pages/blog";
 
-// 
+// Abstract Components Links 
+    @use "./partials/abstract/mixins";
+    @use "./partials/abstract/variables";
+
+// Core Components Links 
+    @use "./partials/core/setup";
+    @use "./partials/core/typography";
+
+// Layout Components 
+    @use "./partials/layout/header";
+    @use "./partials/layout/footer";
+
+
 
 
