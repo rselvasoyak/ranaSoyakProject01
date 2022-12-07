@@ -1,10 +1,12 @@
 @use "./partials/variables" as *;
 @use "./partials/setup";
 @use "./partials/typography";
-@use "./partials/_indexFiles/indexHeader";
-@use "./partials/_indexFiles/whatIsCaptured";
-@use "./partials/baseStyle";
-@use "./partials/nav";
-@use "./partials/_indexFiles/blogSection";
-@use "./partials/_indexFiles/infoLink";
-@use "./partials/_indexFiles/thisMonth";
+
+// Pages Links
+    @use "./partials/pages/home";
+    @use "./partials/pages/contact";
+    @use "./partials/pages/blog";
+
+// 
+
+
