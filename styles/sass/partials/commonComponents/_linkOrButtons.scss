@@ -1,0 +1,19 @@
+@use "../abstract/variables" as *;
+
+.findOutMore{
+    text-transform: uppercase;
+    width: 10%;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $darkerGreenTone;
+}
+
+.readMore{
+    text-transform: uppercase;
+    width: 10%;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $darkerGreenTone;
+}
