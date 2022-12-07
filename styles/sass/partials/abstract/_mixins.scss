@@ -1,1 +1,31 @@
 @use "../abstract/variables" as *;
+
+// Media Query Mixins 
+    @mixin desktopLayout {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @mixin tabletOnlyLayout {
+        @media (max-width: 850px) {
+            @content;
+        }
+    }
+
+    @mixin mobileOnlyLayout {
+        @media (max-width: 500px) {
+            @content;
+        }
+    }
+
+// Header Image Box (Home and Blog Page) Mixin ?????
+    @mixin headerBox {
+         position: absolute;
+            right: 0;
+            bottom: -25rem;
+            z-index: 10;
+        max-width: 100%;
+        width: 48vw;
+    }
+

@@ -1,0 +1,14 @@
+@use "../abstract/variables" as *;
+
+// General
+img {
+    display: block;
+     width: 100%;
+}
+
+// Blog Page
+ .asideImageContainer{
+            position: absolute;
+            left: -8rem;
+            max-width: 100%;
+        }

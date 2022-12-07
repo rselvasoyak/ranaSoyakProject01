@@ -1,108 +1,56 @@
 @use "../abstract/variables" as *;
 
-html {
-    font-size: 62.5%;
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    font-family: $bodyFontFam;
-    font-weight: 400;
-    font-size: $sixthFontSize20;
-    color: $blackTone;
-    line-height: $secondaryLineHeight32;
-    background-color: $whiteTone;
-}
-
-
-blockquote{
-    margin-left: 0;
-}
-
-nav{
-    ul{
-        display: flex;
-        li{
-            margin-left: 10rem;
-        }
+// General 
+    html {
+        font-size: 62.5%;
+        padding: 0;
+        margin: 0;
     }
-    a{
-        font-family: $primaryFontFam;
+
+    body{
+        font-family: $bodyFontFam;
+        font-weight: 400;
         font-size: $sixthFontSize20;
-        text-align: center;
-        line-height: $thirdLineHeight29;
-        letter-spacing: $primaryLetterSpacing1;
-        text-decoration: none;
-        cursor: pointer;
-        transition: 0.2s;
-        text-align: center;
+        color: $blackTone;
+        line-height: $secondaryLineHeight32;
+        background-color: $whiteTone;
+    }
+
+// Headings 
+    h1,h2,h3,h4 {
+        font-family: $primaryFontFam;
         text-transform: uppercase;
-        color: inherit;
-        &:hover, &:focus{
-        border-bottom: $darkerGreenTone 3px solid;
+    }
+
+    h1{
+        font-size: $primaryFontSize138;
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+        .contactH1, .blogH1 {
+            font-size: $secondaryFontSize80;
+            line-height: $primaryLineHeight92;
+            text-transform: uppercase;
         }
-    }
-}
 
-
-img {
-    display: block;
-     width: 100%;
-}
-
-h1,ul,li,a{
-    margin: 0;
-    padding: 0;
-}
-
-h1,h2,h3 {
-    font-family: $primaryFontFam;
-    text-transform: uppercase;
-}
-
-h1{
-    font-size: $primaryFontSize138;
-    font-weight: 700;
-    font-style: italic;
-    text-align: center;
-}
-
-    .contactH1, .blogH1 {
-        font-size: $secondaryFontSize80;
-        line-height: $primaryLineHeight92;
-        text-transform: uppercase;
+    h2{
+        font-size: $thirdFontSize42;
+        letter-spacing: $primaryLetterSpacing1;
     }
 
-h2{
-    font-size: $thirdFontSize42;
-    letter-spacing: $primaryLetterSpacing1;
-}
+    h3{
+        font-size: $fourthFontSize32;
+        letter-spacing: $primaryLetterSpacing1;
+        margin:0;
+    }
 
-h3{
-    font-size: $fourthFontSize32;
-    letter-spacing: $primaryLetterSpacing1;
-    margin:0;
-}
+    h4{
+        font-size: $fifthFontSize26;
+        letter-spacing: $secondaryLetterSpacing;
+    }
 
-h1,ul,li,a{
-    margin: 0;
-    padding: 0;
-}
-
-blockquote{
-    margin-left: 0;
-}
-
-ul{
-    list-style: none;
-    display: flex;
-}
-
-a{
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
-    text-align: center;
-}
 

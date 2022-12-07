@@ -13,27 +13,49 @@
 </head>
 <body>
     <header>
-      <img src="" alt="">  
+      <img src="./assets/blog-header.jpg" alt="Snowy mountain view during daytime.">  
+
+      <section>
+          <div class="wrapper blogNavigationContainer">
+              <nav>
+                  <ul>
+                      <li><a href="">home</a></li>
+                      <li><a href="">about</a></li>
+                      <li><a href="">blog</a></li>
+                      <li><a href="">contact</a></li>
+                  </ul>
+              </nav>
+              <h1 class="blogH1">blog</h1>
+          </div> <!-- top container ending -->
+  
+          <div class="headerBlogBoxContainer">
+              <img src="./assets/blog-post-image.jpg" alt="A woman holding their camera in a glower field, taking picture during sunset">
+          </div>
     </header>
+
+    <aside class="wrapper asideSideInfoBox">
+		<div class="asideImageContainer">
+			<img src="./assets/side-blog-image.jpg" alt="A camera lens floating up in the air above a hand with the background of sea and mountains">
+		</div>
+		<div class="asideContentContainer">
+			<div class="aboutCaptured">
+				<h4>about captured</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem molestiae cumque voluptate <a>find out more.</a></p>
+			</div>
+			<div class="recentPosts">
+				<h4>recent posts</h4>
+				<ul>
+					<li>Lorem ipsum dolor sit</li>
+					<li>amet consectetur adipisicing elit</li>
+					<li>Pariatur dolorem molestiae cumque</li>
+					<li>libero unde deserunt itaque</li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+
     <main>
-
-        <section>
-            <div class="contactNavigationContainer">
-                <nav class=" wrapper contactNavigationContainer">
-                    <ul>
-                        <li><a href="">home</a></li>
-                        <li><a href="">about</a></li>
-                        <li><a href="">blog</a></li>
-                        <li><a href="">contact</a></li>
-                    </ul>
-                </nav>
-                <h1 class="blogH1">blog</h1>
-            </div> <!-- top container ending -->
-
-            <div class="imageContainer">
-                <img src="./assets/blog-post-image.jpg" alt="A woman holding their camera in a glower field, taking picture during sunset">
-            </div>
-
+        <div class="wrapper">
             <div class="wrapper blogContentSection">
                 <h2>finding great locations</h2>
                 <p>Monday May 4th, 2019 by Dieula</p>
@@ -59,7 +81,7 @@
 
                     <div class="commentContent">
                         <p>Wednesday October 10th, 2018 by Julia</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, atque maxime. Quos maiores esse rerum voluptates. Delectus asperiores praesentium optio vitae, eius iure qui sint accusantium commodi tempore nemo dolores a illo itaque architecto voluptatibus perferendis autem. Distinctio, minima. Ex, minus praesentium? Voluptatem ab optio autem pariatur mollitia et ipsa?</p>
+                        <blockquote cite="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, atque maxime. Quos maiores esse rerum voluptates. Delectus asperiores praesentium optio vitae, eius iure qui sint accusantium commodi tempore nemo dolores a illo itaque architecto voluptatibus perferendis autem. Distinctio, minima. Ex, minus praesentium? Voluptatem ab optio autem pariatur mollitia et ipsa?</blockquote>
                     </div><!-- comment2 content container ending -->
                 </div><!-- comment2 container ending -->
             </div> <!-- both comments container ending -->
@@ -78,6 +100,7 @@
                 </form>            
             </div> <!-- form container ending -->
         </section> <!-- big content section ending -->
+        </div>
     </main>
     
 </body>

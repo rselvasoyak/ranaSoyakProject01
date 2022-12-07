@@ -1,1 +1,51 @@
 @use "../abstract/variables" as *;
+
+// Comments Section
+    .commentContent {
+        display: flex;
+    }
+
+    blockquote{
+    margin-left: 0;
+    }
+
+// Aside Section 
+    .asideSideInfoBox{
+        background-color: magenta;
+        margin-left: 3rem;
+        width: 30%;
+        flex-direction: column;
+        position: relative;
+        
+        .asideImageContainer{
+            position: absolute;
+            left: -8rem;
+            max-width: 100%;
+        }
+    }
+    .asideContentContainer {
+        background-color: red;
+        display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        width: 60%;
+        height: 100%;
+        margin-left: 40%;
+        padding-left: 2%;
+            padding-right: 1%;
+            padding-bottom: 2%;
+            padding-top: 40rem;
+        display: -webkit-box;
+            -webkit-line-clamp: 14;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                list-style-type: circle;
+                list-style-position: inside;
+            }
+        }
+    }
