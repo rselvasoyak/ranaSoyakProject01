@@ -319,32 +319,59 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80vh;
+  padding-top: 2vh;
 }
-.blogContainer .image1Container {
+.blogContainer .blogImg {
   max-width: 100%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
-.blogContainer .image1Container img {
-  width: 100%;
+.blogContainer .contentContainer {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
-.blogContainer .blogImage2Container {
-  max-width: 100%;
+.blogContainer .contentContainer .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.blogContainer .blogImage2Container img {
-  width: 100%;
+.blogContainer .container1 .wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .infoLinksContainer {
   background-color: #EFFDF3;
+}
+.infoLinksContainer .linkGallery {
+  width: 51%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.infoLinksContainer .topPicksContainer, .infoLinksContainer .communityContainer, .infoLinksContainer .blogLinkContainer, .infoLinksContainer .getInTouchContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.infoLinksContainer .linkGallery .linkContainer {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 .thisMonthsProfile {
@@ -391,6 +418,29 @@ h4 {
   display: flex;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 20;
+  right: 10rem;
+  top: 75rem;
+  border-bottom: 40px solid #FDFA69;
+  border-left: 40px solid #FDFA69;
+  width: 45%;
+}
+
+.generalInfoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .commentContent {
@@ -458,7 +508,7 @@ blockquote {
 
 .wrapper {
   max-width: 1800px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,9 +585,9 @@ header .wrapper nav a:hover, header .wrapper nav a:focus {
   z-index: 10;
   max-width: 100%;
   width: 48vw;
-  border-top: 60px solid #FDFA69;
-  border-bottom: 60px solid #FDFA69;
-  border-left: 50px solid #FDFA69;
+  border-top: 80px solid #FDFA69;
+  border-bottom: 65px solid #FDFA69;
+  border-left: 65px solid #FDFA69;
 }
 
 .headerBlogBoxContainer {
