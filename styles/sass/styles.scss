@@ -13,6 +13,7 @@
     @use "./partials/abstract/mixins";
 
 // Core Components Links 
+    @use "./partials/core/wrapper";
 
 // Layout Components 
     @use "./partials/layout/header";
@@ -20,5 +21,6 @@
 
 // Common Components Partials;
     @use "./partials/commonComponents/linkOrButtons";
+    @use "./partials/commonComponents/images";
 
 

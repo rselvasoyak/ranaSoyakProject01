@@ -58,13 +58,33 @@
 
 
 // This Month's Profile Container
-    .thisMonthProfile {
+    .thisMonthsProfile {
         display: flex;
-        .profileImageContainer{
-            flex-basis: 40%;
-            max-width: 100%;
-            img {
-                width: 100%;
+        height: 80rem;
+        align-items: center;
+        .wrapper {
+            justify-content: space-around;
+            .profileImageContainer {
+                flex-basis: 30%;
+            }
+            .profileContentContainer {
+                flex-basis: 90%;
+                padding-left: 8rem;
             }
         }
     }
+
+// Photo Gallery Section
+.photoGallerySection {
+    background-color: red;
+    height: 80rem;
+    display: flex;
+        align-items: center;
+    .wrapper{
+         justify-content: space-between;
+         .galleryContainer{
+            display: flex;
+            flex-basis: 32%;
+         }
+    }
+}

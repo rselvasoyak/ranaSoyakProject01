@@ -23,16 +23,17 @@
     }
 
     h1{
-        font-size: $primaryFontSize138;
+        font-size: clamp(5rem, $primaryFontSize138, 18rem);
         font-weight: 700;
         font-style: italic;
         text-align: center;
         margin: 0;
+        margin-bottom: 2rem;
         padding: 0;
     }
 
-        .contactH1, .blogH1 {
-            font-size: $secondaryFontSize80;
+        .secondH1 h1 {
+            font-size: clamp(4rem, $secondaryFontSize80, 14rem);
             line-height: $primaryLineHeight92;
             text-transform: uppercase;
         }

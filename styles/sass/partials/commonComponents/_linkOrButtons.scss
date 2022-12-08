@@ -11,23 +11,43 @@
     }
 
 
-
+// Home Page 
     .findOutMore{
         text-transform: uppercase;
-        width: 10%;
-        min-width: 200px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        // min-width: 20px;
+        padding: 12px 50px;
+        text-align: center;
+        display: inline-block;
         background-color: $darkerGreenTone;
+        &:hover, &:focus{
+            cursor: pointer;
+            transition: 0.3s;
+        }
     }   
 
     .readMore{
         text-transform: uppercase;
-        width: 10%;
-        min-width: 200px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 38px;
+        text-align: center;
+        display: inline-block;
+        // min-width: 200px;
         background-color: $darkerGreenTone;
+        &:hover, &:focus{
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+
+    // Contact Page - Submit 
+    button {
+        background-color: $darkerGreenTone; /* Green */
+        border: none;
+        font-family: $primaryFontFam;
+        font-size: $sixthFontSize20;
+            text-transform: uppercase; 
+            text-align: center;
+        padding: 10px 50px;
+        display: inline-block;
     }
 
     // Blog Page "Find Out More"

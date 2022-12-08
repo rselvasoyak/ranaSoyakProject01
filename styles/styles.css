@@ -252,10 +252,11 @@ h1 {
   font-style: italic;
   text-align: center;
   margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
-.contactH1, .blogH1 {
+.secondH1 h1 {
   font-size: 8rem;
   line-height: 9.2rem;
   text-transform: uppercase;
@@ -346,18 +347,50 @@ h4 {
   display: flex;
 }
 
-.thisMonthProfile {
+.thisMonthsProfile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 80rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.thisMonthProfile .profileImageContainer {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  max-width: 100%;
+.thisMonthsProfile .wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.thisMonthProfile .profileImageContainer img {
-  width: 100%;
+.thisMonthsProfile .wrapper .profileImageContainer {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.thisMonthsProfile .wrapper .profileContentContainer {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  padding-left: 8rem;
+}
+
+.photoGallerySection {
+  background-color: red;
+  height: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.photoGallerySection .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.photoGallerySection .wrapper .galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
 }
 
 .commentContent {
@@ -423,6 +456,15 @@ blockquote {
   list-style-position: inside;
 }
 
+.wrapper {
+  max-width: 1800px;
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -435,19 +477,57 @@ ul {
   display: flex;
 }
 
-nav {
+header {
+  position: relative;
+  /* .wrapper ending */
+}
+header h1 {
+  width: 100%;
+  position: absolute;
+  bottom: 15rem;
+  z-index: 20;
+}
+header .wrapper {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  /* nav {} ending */
+}
+header .wrapper nav {
+  max-width: 100%;
+  position: absolute;
+  padding-top: 4rem;
+  z-index: 30;
+  /* a {} ending */
+}
+header .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav li {
-  margin: 2rem;
+header .wrapper nav ul li {
+  margin-left: 10rem;
+}
+header .wrapper nav a {
+  padding-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  text-align: center;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}
+header .wrapper nav a:hover, header .wrapper nav a:focus {
+  border-bottom: #4CEEA7 3px solid;
 }
 
-.headerImage {
-  max-width: 100%;
-}
-
+/* header {} ending */
 .headerBoxContainer {
   position: absolute;
   right: 0;
@@ -462,74 +542,40 @@ nav li {
 
 .headerBlogBoxContainer {
   position: absolute;
-  right: 0;
-  bottom: -25rem;
+  right: 4rem;
+  bottom: -50rem;
   z-index: 10;
   max-width: 100%;
-  width: 48vw;
-  border-top: 60px solid #FDFA69;
-  border-bottom: 60px solid #FDFA69;
-  border-left: 50px solid #FDFA69;
+  width: 50vw;
+}
+.headerBlogBoxContainer .blogBoxInnerContainer {
+  background-color: #FDFA69;
+  position: relative;
+}
+.headerBlogBoxContainer .blogBoxInnerContainer img {
+  position: absolute;
 }
 
-nav ul {
+.secondH1 h1 {
+  position: absolute;
+  top: 15rem;
+}
+
+footer {
+  height: 4vh;
+  background-color: #2C2C2C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-nav ul li {
-  margin-left: 10rem;
-}
-nav a {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 2.9rem;
-  letter-spacing: 1px;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  text-align: center;
-  text-transform: uppercase;
-  color: inherit;
-}
-nav a:hover, nav a:focus {
-  border-bottom: #4CEEA7 3px solid;
-}
-
-.headerBlogBoxContainer {
-  position: absolute;
-  right: 0;
-  bottom: -25rem;
-  z-index: 10;
-  max-width: 100%;
-  width: 48vw;
-}
-
-header {
-  position: relative;
-}
-header h1 {
-  width: 100%;
-  position: absolute;
-  bottom: 15rem;
-  z-index: 20;
-}
-header .wrapper {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-header .wrapper nav {
-  max-width: 100%;
-  position: absolute;
-  top: 3rem;
-  right: -2rem;
-  z-index: 20;
-}
-header .wrapper nav a {
-  padding-bottom: 10px;
+footer p {
+  color: #FAFAFA;
 }
 
 a {
@@ -544,24 +590,54 @@ a {
 
 .findOutMore {
   text-transform: uppercase;
-  width: 10%;
-  min-width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 12px 50px;
+  text-align: center;
+  display: inline-block;
   background-color: #4CEEA7;
+}
+.findOutMore:hover, .findOutMore:focus {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .readMore {
   text-transform: uppercase;
-  width: 10%;
-  min-width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 38px;
+  text-align: center;
+  display: inline-block;
   background-color: #4CEEA7;
+}
+.readMore:hover, .readMore:focus {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button {
+  background-color: #4CEEA7; /* Green */
+  border: none;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 50px;
+  display: inline-block;
 }
 
 .aboutCaptured a {
   font-weight: 800;
   text-transform: capitalize;
   font-style: italic;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.asideImageContainer {
+  position: absolute;
+  left: -8rem;
+  max-width: 100%;
 }

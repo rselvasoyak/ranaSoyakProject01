@@ -11,100 +11,98 @@
         display: flex;
     }
 
-    nav{
-        display: flex;
-        li{
-            margin: 2rem;
-        }
-    }
+    // Header Navigation - With Hover/ Focus and Styling
+    header {
+        position: relative;
+            h1{
+                width: 100%;
+                position: absolute;
+                    bottom: 15rem;
+                    z-index: 20;
+            }
+            .wrapper{
+                justify-content: end;
+                    nav{
+                            max-width: 100%;
+                            position: absolute;
+                            padding-top: 4rem;
+                            z-index: 30;
+                        ul{
+                            display: flex;
+                            li{
+                                margin-left: 10rem;
+                            }
+                        }
+                        a{
+                            padding-bottom: 10px;
+                            font-family: $primaryFontFam;
+                            font-size: $fifthFontSize26;
+                            text-align: center;
+                            line-height: $thirdLineHeight29;
+                            letter-spacing: $primaryLetterSpacing1;
+                            text-decoration: none;
+                            cursor: pointer;
+                            transition: 0.2s;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: inherit;
+                            &:hover, &:focus{
+                            border-bottom: $darkerGreenTone 3px solid;
+                            }
+                        }/* a {} ending */
+                    }/* nav {} ending */
+            }/* .wrapper ending */
+    }/* header {} ending */
 
-// Header Hero Image
-    .headerImage{
+
+
+// Home-Index Page Header Elements
+    // Header Side Box Image (Index)
+        .headerBoxContainer{
+            position: absolute;
+                right: 0;
+                bottom: -25rem;
+                z-index: 10;
             max-width: 100%;
+            width: 48vw;
+            border-top: 60px solid $yellowTone;
+                border-bottom: 60px solid $yellowTone;
+                border-left: 50px solid $yellowTone;
         }
 
-// Header Side Box Image (Index)
-    .headerBoxContainer{
-        position: absolute;
-            right: 0;
-            bottom: -25rem;
-            z-index: 10;
-        max-width: 100%;
-        width: 48vw;
-        border-top: 60px solid $yellowTone;
-            border-bottom: 60px solid $yellowTone;
-            border-left: 50px solid $yellowTone;
-    }
+// Contact Page Header Elements 
 
-// Header Side Box Image (Body)
-    .headerBlogBoxContainer {
-        position: absolute;
-            right: 0;
-            bottom: -25rem;
-            z-index: 10;
-        max-width: 100%;
-        width: 48vw;
-        border-top: 60px solid $yellowTone;
-            border-bottom: 60px solid $yellowTone;
-            border-left: 50px solid $yellowTone;
-    }
 
-// Header Link State - Hover/ Focus and Styling
-    nav{
-        ul{
-            display: flex;
-            li{
-                margin-left: 10rem;
-            }
-        }
-        a{
-            font-family: $primaryFontFam;
-            font-size: $sixthFontSize20;
-            text-align: center;
-            line-height: $thirdLineHeight29;
-            letter-spacing: $primaryLetterSpacing1;
-            text-decoration: none;
-            cursor: pointer;
-            transition: 0.2s;
-            text-align: center;
-            text-transform: uppercase;
-            color: inherit;
-            &:hover, &:focus{
-            border-bottom: $darkerGreenTone 3px solid;
-            }
-        }
-    }
-    // Home-Index Page Header Elements
-    // Contact Page Header Elements 
-    // Blog Page Header Elements 
+// Blog Page Header Elements 
+    // Header Side Box Image (Blog)
         .headerBlogBoxContainer {
             position: absolute;
-                    right: 0;
-                    bottom: -25rem;
-                    z-index: 10;
-                max-width: 100%;
-                width: 48vw;
+            right: 4rem;
+            bottom: -50rem;
+            z-index: 10;
+            max-width: 100%;
+            width: 50vw;
+            .blogBoxInnerContainer{
+                background-color: $yellowTone;
+                position: relative;
+
+                img {
+                    position: absolute;
+                }
+            }
         }
 
-header {
-    position: relative;
-        h1{
-            width: 100%;
+// Contact Page and Blog Page H1 
+        .secondH1 h1 {
             position: absolute;
-                bottom: 15rem;
-                z-index: 20;
+            top: 15rem;
         }
-        .wrapper{
-            justify-content: end;
-            nav{
-                max-width: 100%;
-                position: absolute;
-                top: 3rem;
-                right: -2rem;
-                z-index: 20;
-                a{
-                    padding-bottom: 10px;
-                }
+
+  
+    
+
+
+                
                 // .dropdownMenu {
                 //     visibility: hidden;
                 //     position: absolute;
@@ -123,6 +121,3 @@ header {
                 //         position: absolute;
                 //         z-index: 30;
                 //     }
-                }
-            }
-        }
