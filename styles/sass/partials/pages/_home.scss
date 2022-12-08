@@ -91,6 +91,10 @@
             .profileContentContainer {
                 flex-basis: 90%;
                 padding-left: 8rem;
+                display: -webkit-box;
+                    -webkit-line-clamp: 18;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
             }
         }
     }
