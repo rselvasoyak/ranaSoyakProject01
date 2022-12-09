@@ -247,7 +247,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 13.8rem;
+  font-size: clamp(5rem, 13vw, 18rem);
   font-weight: 700;
   font-style: italic;
   text-align: center;
@@ -281,7 +281,6 @@ h4 {
 .capturedInfo {
   background-color: #EFFDF3;
   max-width: 100%;
-  height: 60vh;
   padding-top: 100px;
   padding-bottom: 50px;
   display: -webkit-box;
@@ -321,7 +320,6 @@ h4 {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 80vh;
   padding-top: 2vh;
 }
 .blogContainer .blogImg {
@@ -352,17 +350,12 @@ h4 {
   background-color: #EFFDF3;
 }
 .infoLinksContainer .linkGallery {
-  width: 51%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -370,15 +363,15 @@ h4 {
           align-items: center;
 }
 .infoLinksContainer .linkGallery .linkContainer {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .thisMonthsProfile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80rem;
+  height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -388,22 +381,19 @@ h4 {
       justify-content: space-around;
 }
 .thisMonthsProfile .wrapper .profileImageContainer {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  max-width: 100%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 .thisMonthsProfile .wrapper .profileContentContainer {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
+  max-width: 100%;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
   padding-left: 8rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 18;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .photoGallerySection {
   background-color: red;
-  height: 80rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,12 +542,22 @@ header .wrapper nav {
   position: absolute;
   padding-top: 4rem;
   z-index: 30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   /* a {} ending */
+  /* .hamburgerMenu {} Ending */
 }
 header .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 850px) {
+  header .wrapper nav ul {
+    background-color: red;
+    visibility: hidden;
+  }
 }
 header .wrapper nav ul li {
   margin-left: 10rem;
@@ -579,6 +579,35 @@ header .wrapper nav a {
 }
 header .wrapper nav a:hover, header .wrapper nav a:focus {
   border-bottom: #4CEEA7 3px solid;
+}
+header .wrapper nav .hamburgerMenu {
+  visibility: hidden;
+  right: 5%;
+  top: 50%;
+  width: 5vw;
+  height: 7vh;
+  max-width: 100%;
+  position: absolute;
+  z-index: 30;
+}
+header .wrapper nav .hamburgerMenu .dropdownMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header .wrapper nav .hamburgerMenu .dropdownMenu i {
+  position: absolute;
+}
+@media (max-width: 850px) {
+  header .wrapper nav .hamburgerMenu {
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    z-index: 30;
+  }
 }
 
 /* header {} ending */

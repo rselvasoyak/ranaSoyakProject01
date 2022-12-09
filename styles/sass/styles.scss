@@ -1,6 +1,7 @@
 // My SASS Organization was inspired by the "7-1" Pattern 
 
 @use "./partials/abstract/variables" as *;
+@use "./partials/abstract/mixins";
 @use "./partials/core/setup";
 @use "./partials/core/typography";
 
@@ -9,18 +10,18 @@
     @use "./partials/pages/contact";
     @use "./partials/pages/blog";
 
-// Abstract Components Links 
-    @use "./partials/abstract/mixins";
-
-// Core Components Links 
+    
+    // Core Components Links 
     @use "./partials/core/wrapper";
-
-// Layout Components 
+    
+    // Layout Components 
     @use "./partials/layout/header";
     @use "./partials/layout/footer";
-
-// Common Components Partials;
+    
+    // Common Components Partials;
     @use "./partials/commonComponents/linkOrButtons";
     @use "./partials/commonComponents/images";
-
+    
+    // Abstract Components Links 
+    @use "./partials/abstract/mediaQuery" as *;
 
