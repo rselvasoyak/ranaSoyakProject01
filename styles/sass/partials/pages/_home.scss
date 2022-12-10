@@ -102,7 +102,7 @@
         .linkGallery{
             display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
                 flex-wrap: wrap;
         }
 
@@ -116,11 +116,13 @@
         .linkIcon {
             display: flex;
                 justify-content: flex-start;
-                flex-basis: 50%;
+                flex-basis: 20%;
             padding-top: 1%;
         }
         .content {
-            text-align: start;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
     }   
 
@@ -130,25 +132,24 @@
         display: flex;
             align-items: center;
         height: auto;
-        padding-top: 10%;
-            padding-bottom: 10%;
+        padding-top: 8%;
+            padding-bottom: 8%;
         .wrapper {
             justify-content: space-around;
             .profileImageContainer {
                 max-width: 100%;
-                flex-basis: 40%;
+                flex-basis: 25%;
             }
             .profileContentContainer {
                 max-width: 100%;
-                flex-basis: 80%;
-                padding-left: 8rem;
+                flex-basis: 60%;
+                padding-left: 5rem;
             }
         }
     }
 
 // Photo Gallery Section
 .photoGallerySection {
-    background-color: red;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;

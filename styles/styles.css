@@ -408,9 +408,9 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -431,12 +431,21 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   padding-top: 1%;
 }
 .linkContainer .content {
-  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .thisMonthsProfile {
@@ -448,8 +457,8 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 .thisMonthsProfile .wrapper {
   -ms-flex-pack: distribute;
@@ -457,18 +466,17 @@ h4 {
 }
 .thisMonthsProfile .wrapper .profileImageContainer {
   max-width: 100%;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 .thisMonthsProfile .wrapper .profileContentContainer {
   max-width: 100%;
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
-  padding-left: 8rem;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-left: 5rem;
 }
 
 .photoGallerySection {
-  background-color: red;
   padding-top: 5%;
   padding-bottom: 5%;
   display: -webkit-box;
@@ -774,6 +782,21 @@ a {
   transition: 0.3s;
 }
 
+.linkIcon {
+  background-color: #4CEEA7;
+  height: 100%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding-top: 1%;
+}
+.linkIcon a {
+  text-align: center;
+}
+
 button {
   background-color: #4CEEA7; /* Green */
   border: none;
@@ -808,6 +831,11 @@ img {
   bottom: -20px;
   -webkit-box-shadow: -40px 40px 3px #FDFA69;
           box-shadow: -40px 40px 3px #FDFA69;
+}
+
+.thisMonthImage {
+  -webkit-box-shadow: 40px 40px 3px #FDFA69;
+          box-shadow: 40px 40px 3px #FDFA69;
 }
 
 .asideImageContainer {
