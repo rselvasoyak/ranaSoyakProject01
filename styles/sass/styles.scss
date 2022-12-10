@@ -17,6 +17,7 @@
     // Layout Components 
     @use "./partials/layout/header";
     @use "./partials/layout/footer";
+    @use "./partials/layout/form";
     
     // Common Components Partials;
     @use "./partials/commonComponents/linkOrButtons";

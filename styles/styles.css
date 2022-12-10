@@ -708,22 +708,6 @@ header .wrapper nav .hamburgerMenu .dropdownMenu i {
   border-left: 65px solid #FDFA69;
 }
 
-.headerBlogBoxContainer {
-  position: absolute;
-  right: 4rem;
-  bottom: -50rem;
-  z-index: 10;
-  max-width: 100%;
-  width: 50vw;
-}
-.headerBlogBoxContainer .blogBoxInnerContainer {
-  background-color: #FDFA69;
-  position: relative;
-}
-.headerBlogBoxContainer .blogBoxInnerContainer img {
-  position: absolute;
-}
-
 .secondH1 h1 {
   position: absolute;
   top: 15rem;

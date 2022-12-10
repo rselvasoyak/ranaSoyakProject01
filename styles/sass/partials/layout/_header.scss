@@ -108,22 +108,22 @@
 
 // Blog Page Header Elements 
     // Header Side Box Image (Blog)
-        .headerBlogBoxContainer {
-            position: absolute;
-            right: 4rem;
-            bottom: -50rem;
-            z-index: 10;
-            max-width: 100%;
-            width: 50vw;
-            .blogBoxInnerContainer{
-                background-color: $yellowTone;
-                position: relative;
+        // .headerBlogBoxContainer {
+        //     position: absolute;
+        //     right: 4rem;
+        //     bottom: -50rem;
+        //     z-index: 10;
+        //     max-width: 100%;
+        //     width: 50vw;
+        //     .blogBoxInnerContainer{
+        //         background-color: $yellowTone;
+        //         position: relative;
 
-                img {
-                    position: absolute;
-                }
-            }
-        }
+        //         img {
+        //             position: absolute;
+        //         }
+        //     }
+        // }
 
 // Contact Page and Blog Page H1 
         .secondH1 h1 {
