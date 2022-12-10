@@ -30,25 +30,33 @@
 
 
 // Blog Container
-
     .blogContainer {
         display: flex;
             flex-direction: column;
         .topRowBlogContainer{
             display: flex;
             // justify-content: flex-end;
-            margin-bottom: 4%;
+            margin-bottom: 8%;
             .blogImg {
                 position: relative;
                 flex-basis: 40%;
             }
             .contentContainer{
                 margin-left: 17%;
-                margin-top: 5%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    // is it better to use margin or padding in this situation?
                 flex-basis: 38%;
                 .wrapper{
                     flex-direction: column;
                 }
+                    .wrapper p{
+                        padding-top: 2%;
+                            padding-bottom:2%;
+                    }
+                    .wrapper a{
+                        align-self: flex-start;
+                    }
             }
         }
         .bottomRowBlogContainer {
@@ -59,19 +67,28 @@
                 position: relative;
                 flex-basis: 40%;
                 margin-left: 15%;
+                margin-top: 4%;
+                // is it better to use margin or padding in this situation?
             }
             .contentContainer{
                 flex-basis: 38%;
-                margin-top: 5%;
-                margin-bottom: 3%;
+                margin-top: 2%;
+                    margin-bottom: 5%;
+                    // is it better to use margin or padding in this situation?
                 .wrapper{
                     flex-direction: column;
                     text-align: end;
                 }
             }
-            .wrapper p{
-                text-align: left;
-            }
+                .wrapper p{
+                    // text-align: left;
+                    padding-top: 2%;
+                        padding-bottom:2%;
+                }
+                .wrapper a{
+                    align-self: flex-end;
+                }
+
         }
     } 
         
@@ -80,26 +97,41 @@
 // Information Links Container
     .infoLinksContainer{
         background-color: $lighterGreenTone;
+        padding-top: 4%;
+            padding-bottom: 4%;
         .linkGallery{
-            // width: calc((100% / 2) - 20px);
             display: flex;
                 justify-content: space-between;
-                flex-wrap: wrap;
                 align-items: center;
-            .linkContainer{
-                flex-basis: 48%; 
-            }
+                flex-wrap: wrap;
         }
 
     }
 
+    .linkContainer{
+        display: flex;
+        flex-basis: 48%; 
+        margin-top: 2%;
+            margin-bottom: 2%;
+        .linkIcon {
+            display: flex;
+                justify-content: flex-start;
+                flex-basis: 50%;
+            padding-top: 1%;
+        }
+        .content {
+            text-align: start;
+        }
+    }   
 
 // This Month's Profile Container
     .thisMonthsProfile {
+        background-color: $lighterGreenTone;
         display: flex;
+            align-items: center;
         height: auto;
-
-        align-items: center;
+        padding-top: 10%;
+            padding-bottom: 10%;
         .wrapper {
             justify-content: space-around;
             .profileImageContainer {
@@ -110,10 +142,6 @@
                 max-width: 100%;
                 flex-basis: 80%;
                 padding-left: 8rem;
-                // display: -webkit-box;
-                //     -webkit-line-clamp: 18;
-                //     -webkit-box-orient: vertical;
-                //     overflow: hidden;
             }
         }
     }
@@ -121,6 +149,8 @@
 // Photo Gallery Section
 .photoGallerySection {
     background-color: red;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
         align-items: center;
     .wrapper{
