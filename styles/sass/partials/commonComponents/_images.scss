@@ -6,6 +6,24 @@ img {
      width: 100%;
 }
 
+
+// Home Page
+    // Blog Section 
+    .blogImage1 {
+        position: absolute;
+            top: -40px;
+        box-shadow: 40px 40px 3px $yellowTone;
+    }
+
+    .blogImage2{
+        position: absolute;
+            bottom: -20px;
+        box-shadow: -40px 40px 3px $yellowTone;
+    }
+
+
+
+
 // Blog Page
  .asideImageContainer{
             position: absolute;

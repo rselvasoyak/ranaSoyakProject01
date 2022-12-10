@@ -4,11 +4,14 @@
     .capturedInfo {
     background-color: $lighterGreenTone;
     max-width: 100%;
-    // height: 60vh;
     padding-top: 100px;
-    padding-bottom: 50px;
+        padding-bottom: 50px;
     display: flex;
     align-items: center;
+        .capturedContent{
+            margin-top: 11%;
+                margin-bottom: 8%; 
+        }
         .wrapper{
             flex-direction: column;
                 justify-content: center;
@@ -27,37 +30,51 @@
 
 
 // Blog Container
+
     .blogContainer {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        // height: 80vh;
-        padding-top: 2vh;
-        .blogImg{
-            max-width: 100%;
-            flex-basis: 30%;
-        }
-        .contentContainer{
-            flex-basis: 40%;
-            .wrapper{
-                flex-direction: column;
-                align-items: flex-end;
+            flex-direction: column;
+        .topRowBlogContainer{
+            display: flex;
+            // justify-content: flex-end;
+            margin-bottom: 4%;
+            .blogImg {
+                position: relative;
+                flex-basis: 40%;
+            }
+            .contentContainer{
+                margin-left: 17%;
+                margin-top: 5%;
+                flex-basis: 38%;
+                .wrapper{
+                    flex-direction: column;
+                }
             }
         }
-        .container1{
-            .wrapper{
-                align-items: flex-start;
+        .bottomRowBlogContainer {
+            display: flex;
+                flex-direction: row-reverse;
+            margin-top: 4%;
+            .blogImg {
+                position: relative;
+                flex-basis: 40%;
+                margin-left: 15%;
+            }
+            .contentContainer{
+                flex-basis: 38%;
+                margin-top: 5%;
+                margin-bottom: 3%;
+                .wrapper{
+                    flex-direction: column;
+                    text-align: end;
+                }
+            }
+            .wrapper p{
+                text-align: left;
             }
         }
-    }
-
-    // .blogImage2Container{
-    //         max-width: 100%;
-    //         img{
-    //             width: 100%;
-    //         }
-    //     }
-    
+    } 
+        
 
 
 // Information Links Container
@@ -66,7 +83,6 @@
         .linkGallery{
             // width: calc((100% / 2) - 20px);
             display: flex;
-                // flex-direction: column;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 align-items: center;
@@ -105,7 +121,6 @@
 // Photo Gallery Section
 .photoGallerySection {
     background-color: red;
-    // height: 80rem;
     display: flex;
         align-items: center;
     .wrapper{
