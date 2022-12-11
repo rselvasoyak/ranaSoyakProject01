@@ -1,4 +1,5 @@
 @use "../abstract/variables" as*;
+@use "../abstract/mixins" as *;
 
 // Contact Page
     .contactFormContainer {
@@ -15,5 +16,42 @@
 
 // Blog Page 
     .blogFormContainer{
-
+        display: flex;
+        padding-top: 5%;
+            padding-bottom: 5%;
+        .blogForm{
+            flex-basis: 100%;
+            .formTopRow{
+                display: flex;
+                width: 100%;
+                .nameContainer, .emailContainer {
+                    flex-basis: 100%;
+                }
+            }
+        }
     }
+        #name, #mail {
+            width: 90%;
+            padding-bottom: 2%;
+            padding-left: 2%;
+            @include appearance;
+                border-bottom: $darkerGreenTone 3px solid;
+            &:hover, &:focus {
+                border-bottom: $darkerGreenTone 7px solid;
+                transition: 0.4s;
+            }
+        }
+        #mail {
+            margin-left: 10%;
+        }
+        textarea.input{
+            border: $darkerGreenTone 3px solid;
+            width: 100%;
+            padding: 20px;
+            margin-top: 5%;
+            &:hover, &:focus {
+                border: $darkerGreenTone 7px solid;
+                transition: 0.4s;
+            }
+        }
+    

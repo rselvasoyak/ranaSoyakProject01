@@ -1,5 +1,9 @@
 @use "../abstract/variables" as *;
 
-// @mixin flexColumn {
-    
-// }
+
+// Form Default Style Normalizing 
+@mixin appearance {
+    border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}

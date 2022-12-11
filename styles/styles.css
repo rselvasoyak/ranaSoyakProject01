@@ -506,7 +506,6 @@ h4 {
 }
 
 .bigBlogContentContainer {
-  border: 10px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +517,7 @@ h4 {
 
 .asideSideInfoBox {
   background-color: magenta;
-  width: 100%;
+  width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -528,7 +527,7 @@ h4 {
 .asideSideInfoBox .asideImageContainer {
   position: absolute;
   left: -8rem;
-  max-width: 100%;
+  width: 100%;
 }
 
 .asideContentContainer {
@@ -547,7 +546,6 @@ h4 {
   padding-left: 2%;
   padding-right: 1%;
   padding-bottom: 2%;
-  padding-top: 40rem;
 }
 .asideContentContainer ul {
   display: -webkit-box;
@@ -650,7 +648,6 @@ ul {
 
 header {
   position: relative;
-  border: 10px solid blueviolet;
   /* .wrapper ending */
 }
 header h1 {
@@ -790,6 +787,59 @@ footer p {
   width: 45%;
 }
 
+.blogFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.blogFormContainer .blogForm {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.blogFormContainer .blogForm .formTopRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.blogFormContainer .blogForm .formTopRow .nameContainer, .blogFormContainer .blogForm .formTopRow .emailContainer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#name, #mail {
+  width: 90%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: #4CEEA7 3px solid;
+}
+#name:hover, #name:focus, #mail:hover, #mail:focus {
+  border-bottom: #4CEEA7 7px solid;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#mail {
+  margin-left: 10%;
+}
+
+textarea.input {
+  border: #4CEEA7 3px solid;
+  width: 100%;
+  padding: 20px;
+  margin-top: 5%;
+}
+textarea.input:hover, textarea.input:focus {
+  border: #4CEEA7 7px solid;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -856,6 +906,15 @@ button {
   font-weight: 800;
   text-transform: capitalize;
   font-style: italic;
+}
+
+.formButton button {
+  width: 100%;
+}
+.formButton button:hover, .formButton button:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: green;
 }
 
 img {

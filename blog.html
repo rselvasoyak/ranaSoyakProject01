@@ -34,7 +34,6 @@
         </div> <!-- top container ending -->
 
         <img src="./assets/blog-header.jpg" alt="Snowy mountain view during daytime.">  
-  
     </header>
     
     
@@ -102,18 +101,26 @@
                         </div><!-- comment2 container ending -->
                     </div> <!-- both comments container ending -->
         
-                    <div>
-                        <form action="GET">
-                            <label for="name"></label>
-                            <input type="text" id="name" required placeholder="Name">
+                    <div class="blogFormContainer">
+                        <form class="blogForm" action="#" method="GET" name="blogForm">
+                            <div class="formTopRow">
+                                <div class="nameContainer">
+                                    <label for="name"></label>
+                                    <input type="text" id="name" name="name"required placeholder="Name">
+                                </div><!-- Name Container ending -->
+                                <div class="emailContainer">
+                                    <label for="mail"></label> 
+                                    <input type="email" id="mail"name="mail" required placeholder="Email Address">
+                                </div><!-- Email Container Ending -->
+                            </div>
                             
-                            <label for="email"></label> 
-                            <input type="email" id="email" required placeholder="Email Address">
+                            <label for="comment" class="sr-only">Provide Your Emaill Address</label>
+                            <textarea class="input" name="commentContainer" id="comment" placeholder="Comments" cols="30" rows="10"></textarea>
                             
-                            <textarea name="" id="" placeholder="Comments" cols="30" rows="10"></textarea>
-                            
-                            <button type="submit">post comment</button>
-                        </form>            
+                            <div class="formButton">
+                                <button type="submit">post comment</button>
+                            </div><!-- Button Container Ending -->
+                        </form>   <!-- Form Ending -->         
                     </div> <!-- Form Container Ending -->
                 </div><!--  Wrapper Container Ending -->
 
