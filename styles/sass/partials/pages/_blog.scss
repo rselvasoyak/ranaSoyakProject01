@@ -1,4 +1,9 @@
 @use "../abstract/variables" as *;
+
+body {
+    background-color: $lighterGreen;
+}
+
 // Main Blog Content Container 
 .bigBlogContentContainer {
     display: flex;
@@ -15,7 +20,7 @@
         // display: flex;
         //     flex-direction: column;
         // padding-top: 20rem;
-        //     padding-left: 5%;
+            padding-left: 5%;
     }
         .asideSideInfoBox{
             background-color: magenta;

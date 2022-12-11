@@ -37,49 +37,60 @@
         <img src="./assets/contact-header.jpg" alt="A person with red jacket at the top of a mountain, taking a photo of the snowy view">
 
         <section>
-                <form class="contactFormContainer"action="GET"> 
+                <form class="contactFormContainer"action="#" method="GET" name="contactForm"> 
                     <!-- left and bottom border -->
-                    <label for="name">name</label>
-                    <input type="text" placeholder="Name">
+                    <div class="contactFormTopRow">
+                        <div class="contactName">
+                            <label for="contactName" class="sr-only">name</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Name">
+                        </div>
+                        
+                        <div class="contactEmail">
+                            <label for="contactEmail" class="sr-only">email</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required placeholder="E-mail Address">
+                        </div>
+                    </div>
                     
-                    <label for="email">email</label>
-                    <input type="email" id="email" placeholder="E-mail Address">
-                    
-                    <label for=""></label>
-                    <textarea name="messageUs" id="messageInput" cols="30" rows="10"></textarea>
+                    <label for="comment" class="sr-only">Please Input Your Message</label>
+                    <textarea name="messageUs" id="comment" class="messageInput" placeholder="Message" cols="30" rows="15"></textarea>
                     <!-- Outer border -->
                     
-                    <button>submit</button>
+                    <button class="contactMessageButton" type="submit">submit</button>
                 </form>
         </section>
     </header> 
 <main>
-    <section>
-        <div class="wrapper generalInfoContainer">
+    <section class="generalInfoContainer">
+        <div class="wrapper">
             <div class="socialMediaContainer">
-                <a href="">
-
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="">
-
+                <a href="https://twitter.com/">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="">
-
+                <a href="https://www.instagram.com">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.whatsapp.com/">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
             </div><!-- social media container ending -->
 
-            <p>
-                info@email.com
-            </p><!-- email ending -->
-
-            <div class="informationContainer">
-                <p>123 - 456 - 7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div><!-- information container ending -->
-        </div><!-- general information container -->
-    </section>
+            <div class="infoContainer">
+                <p class="infoEmail">
+                    info@email.com
+                </p><!-- email ending -->
+    
+                <div class="informationContainer">
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div><!-- information container ending -->
+            </div>
+        </div> <!-- wrapper ending -->
+    </section><!-- general information container -->
 </main>
 
 <footer>

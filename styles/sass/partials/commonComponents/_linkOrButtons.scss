@@ -4,10 +4,13 @@
     a{
         text-decoration: none;
         cursor: pointer;
-        transition: 0.2s;
         text-align: center;
         margin: 0;
         padding: 0;
+        &:hover, &:focus {
+                transition: 0.2s;
+                transform: scale(1.5);
+            }
     }
 
 
@@ -44,7 +47,6 @@
         height: 100%;
         border-radius: 50%;
         display: flex;
-            // justify-content: center;
             flex-basis: 20%;
         padding-top: 1%;
         a{
@@ -54,7 +56,7 @@
 
     // Contact Page - Submit 
     button {
-        background-color: $darkerGreenTone; /* Green */
+        background-color: $darkerGreenTone;
         border: none;
         font-family: $primaryFontFam;
         font-size: $sixthFontSize20;
@@ -64,6 +66,14 @@
         display: inline-block;
     }
 
+    .contactMessageButton {
+        margin-top: 5%;
+        &:hover, &:focus {
+            transition: 0.3s;
+            background-color: green;
+        }
+    }
+
     // Blog Page "Find Out More"
     .aboutCaptured a {
         font-weight: 800 ;
@@ -71,11 +81,14 @@
         font-style: italic;
     }
 
-    // Form Section
-    .formButton button{
-        width: 100%;
-        &:hover, &:focus {
-            transition: 0.3s;
-            background-color: green;
-        }
-    } 
+
+    .formButton {
+        margin-top: 5%;
+        button{
+            width: 100%;
+            &:hover, &:focus {
+                transition: 0.3s;
+                background-color: green;
+            }
+        } 
+    }

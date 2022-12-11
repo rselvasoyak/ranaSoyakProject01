@@ -499,10 +499,55 @@ h4 {
       flex-basis: 32%;
 }
 
+body {
+  background-color: #EFFDF3;
+}
+
 .generalInfoContainer {
+  padding-top: 7%;
+  padding-bottom: 10%;
+}
+.generalInfoContainer .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.generalInfoContainer .socialMediaContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.generalInfoContainer .socialMediaContainer a {
+  margin-right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #2C2C2C;
+}
+.generalInfoContainer .socialMediaContainer a:hover, .generalInfoContainer .socialMediaContainer a:focus {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.generalInfoContainer .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.generalInfoContainer .infoEmail {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #EFFDF3;
 }
 
 .bigBlogContentContainer {
@@ -513,6 +558,10 @@ h4 {
       flex-basis: 45%;
   position: absolute;
   top: 60rem;
+}
+
+.asideContainer {
+  padding-left: 5%;
 }
 
 .asideSideInfoBox {
@@ -781,10 +830,52 @@ footer p {
   position: absolute;
   z-index: 20;
   right: 10rem;
-  top: 75rem;
+  top: 65rem;
   border-bottom: 40px solid #FDFA69;
   border-left: 40px solid #FDFA69;
   width: 45%;
+  padding-left: 3%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  padding-right: 2%;
+  background-color: #FAFAFA;
+}
+.contactFormContainer .contactFormTopRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 7%;
+}
+.contactFormContainer .contactFormTopRow .contactName, .contactFormContainer .contactFormTopRow .contactEmail {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.contactFormContainer .contactFormTopRow .contactName:hover, .contactFormContainer .contactFormTopRow .contactName:focus, .contactFormContainer .contactFormTopRow .contactEmail:hover, .contactFormContainer .contactFormTopRow .contactEmail:focus {
+  border-bottom: #4CEEA7 7px solid;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.contactFormContainer textarea.messageInput {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border: #4CEEA7 3px solid;
+  margin-bottom: 3%;
+}
+.contactFormContainer textarea.messageInput:hover, .contactFormContainer textarea.messageInput:focus {
+  border: #4CEEA7 7px solid;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#contactName, #contactEmail {
+  width: 90%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
 }
 
 .blogFormContainer {
@@ -843,11 +934,15 @@ textarea.input:hover, textarea.input:focus {
 a {
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+a:hover, a:focus {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .findOutMore {
@@ -892,7 +987,7 @@ a {
 }
 
 button {
-  background-color: #4CEEA7; /* Green */
+  background-color: #4CEEA7;
   border: none;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
@@ -900,6 +995,15 @@ button {
   text-align: center;
   padding: 10px 50px;
   display: inline-block;
+}
+
+.contactMessageButton {
+  margin-top: 5%;
+}
+.contactMessageButton:hover, .contactMessageButton:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: green;
 }
 
 .aboutCaptured a {
