@@ -1,20 +1,6 @@
 @use "../abstract/variables" as *;
 
 
-
-// Form Container
-form{
-    display: flex;
-        flex-direction: column;
-    position: absolute;
-        z-index: 20;
-        right: 10rem;
-        top: 75rem;
-    border-bottom: 40px solid $yellowTone;
-    border-left: 40px solid $yellowTone;
-    width: 45%;
-}
-
 // Information and Social Media Section
 .generalInfoContainer {
     display: flex;

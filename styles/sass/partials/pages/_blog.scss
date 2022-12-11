@@ -1,51 +1,111 @@
 @use "../abstract/variables" as *;
+// Main Blog Content Container 
+    // .blogMain{
+    //     // position: relative;
+    // }
 
-// Comments Section
-    .commentContent {
-        display: flex;
-    }
+.bigBlogContentContainer {
+    border: 10px solid red;
+    display: flex;
+        flex-basis: 45%;
+    position: absolute;
+        top: 60rem;
+}
 
-    blockquote{
-    margin-left: 0;
-    }
 
-// Aside Section 
-    .asideSideInfoBox{
-        background-color: magenta;
-        margin-left: 3rem;
-        width: 30%;
-        flex-direction: column;
-        position: relative;
-        
-        .asideImageContainer{
-            position: absolute;
-            left: -8rem;
-            max-width: 100%;
-        }
+// Section 1 - Left Side
+    // Aside Section 
+    .asideContainer {
+        // max-width: 50%;
+        // display: flex;
+        //     flex-direction: column;
+        // padding-top: 20rem;
+        //     padding-left: 5%;
     }
-    .asideContentContainer {
-        background-color: red;
-        display: flex;
-            flex-wrap: wrap;
+        .asideSideInfoBox{
+            background-color: magenta;
+            width: 100%;
             flex-direction: column;
-            justify-content: center;
-        width: 60%;
-        height: 100%;
-        margin-left: 40%;
-        padding-left: 2%;
-            padding-right: 1%;
-            padding-bottom: 2%;
-            padding-top: 40rem;
-        display: -webkit-box;
-            -webkit-line-clamp: 14;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        ul{
-            display: flex;
-            flex-direction: column;
-            li{
-                list-style-type: circle;
-                list-style-position: inside;
+            position: relative;
+            .asideImageContainer{
+                position: absolute;
+                left: -8rem;
+                max-width: 100%;
             }
         }
+        .asideContentContainer {
+            background-color: red;
+            max-width: 40%;
+            // height: 100%;
+            // margin-left: 300rem;
+            display: flex;
+                // flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+            padding-left: 2%;
+                padding-right: 1%;
+                padding-bottom: 2%;
+                padding-top: 40rem;
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    list-style-type: circle;
+                    list-style-position: inside;
+                }
+            }
+        }
+
+// Section 2 - Right Side 
+    // Content Container 
+    .contentContainer {
+        display: flex;
+            flex-direction: column; 
+            .wrapper {
+                display: flex;
+                    flex-direction: column;
+                margin-left: -1rem;
+            }
     }
+
+    //Blog Content Section 
+     .blogContentSection {
+        width: 100%;
+        padding-left: 5%;
+            padding-top: 5%;
+            padding-bottom: 2%;
+        border-left: $yellowTone 5px solid;
+            border-bottom: $yellowTone 5px solid;
+            .headingInfo{
+                margin-bottom: 3%;
+            }
+            h2{
+                margin-bottom: 1%;
+            }
+     }
+
+    // Comments Section
+    .commentsContainer{
+        padding-left: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        .comment {
+            display: flex;
+                align-content: space-between;
+            padding-top: 3%;
+            .commentContent {
+                flex-basis: 90%;
+                margin-left: 5%;
+                aside {
+                    margin-top: 0;
+                }
+            }
+        }
+        .comment2{
+                margin-top: 5%;
+            }
+    }
+
+        blockquote{
+        margin-left: 0;
+        }

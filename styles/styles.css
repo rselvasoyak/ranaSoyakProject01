@@ -499,43 +499,26 @@ h4 {
       flex-basis: 32%;
 }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  z-index: 20;
-  right: 10rem;
-  top: 75rem;
-  border-bottom: 40px solid #FDFA69;
-  border-left: 40px solid #FDFA69;
-  width: 45%;
-}
-
 .generalInfoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.commentContent {
+.bigBlogContentContainer {
+  border: 10px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-blockquote {
-  margin-left: 0;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  position: absolute;
+  top: 60rem;
 }
 
 .asideSideInfoBox {
   background-color: magenta;
-  margin-left: 3rem;
-  width: 30%;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -550,26 +533,21 @@ blockquote {
 
 .asideContentContainer {
   background-color: red;
+  max-width: 40%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
-  height: 100%;
-  margin-left: 40%;
   padding-left: 2%;
   padding-right: 1%;
   padding-bottom: 2%;
   padding-top: 40rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 14;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .asideContentContainer ul {
   display: -webkit-box;
@@ -583,6 +561,70 @@ blockquote {
 .asideContentContainer ul li {
   list-style-type: circle;
   list-style-position: inside;
+}
+
+.contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contentContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -1rem;
+}
+
+.blogContentSection {
+  width: 100%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  border-left: #FDFA69 5px solid;
+  border-bottom: #FDFA69 5px solid;
+}
+.blogContentSection .headingInfo {
+  margin-bottom: 3%;
+}
+.blogContentSection h2 {
+  margin-bottom: 1%;
+}
+
+.commentsContainer {
+  padding-left: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.commentsContainer .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding-top: 3%;
+}
+.commentsContainer .comment .commentContent {
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  margin-left: 5%;
+}
+.commentsContainer .comment .commentContent aside {
+  margin-top: 0;
+}
+.commentsContainer .comment2 {
+  margin-top: 5%;
+}
+
+blockquote {
+  margin-left: 0;
 }
 
 .wrapper {
@@ -608,6 +650,7 @@ ul {
 
 header {
   position: relative;
+  border: 10px solid blueviolet;
   /* .wrapper ending */
 }
 header h1 {
@@ -730,6 +773,23 @@ footer p {
   color: #FAFAFA;
 }
 
+.contactFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 20;
+  right: 10rem;
+  top: 75rem;
+  border-bottom: 40px solid #FDFA69;
+  border-left: 40px solid #FDFA69;
+  width: 45%;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -826,4 +886,18 @@ img {
   position: absolute;
   left: -8rem;
   max-width: 100%;
+}
+
+.blogMainImageContainer {
+  max-width: 100%;
+  padding-left: 3rem;
+}
+.blogMainImageContainer img {
+  -webkit-box-shadow: -40px 40px 3px #FDFA69;
+          box-shadow: -40px 40px 3px #FDFA69;
+}
+
+.commentImageContainer {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
 }

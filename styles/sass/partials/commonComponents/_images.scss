@@ -27,10 +27,24 @@ img {
 
 
 
-
 // Blog Page
  .asideImageContainer{
             position: absolute;
             left: -8rem;
             max-width: 100%;
     }
+
+.blogMainImageContainer {
+    max-width: 100%;
+    padding-left: 3rem;
+    img{
+        box-shadow: -40px 40px 3px $yellowTone;
+    }
+}
+
+    // Comment Section
+   .commentImageContainer {
+    flex-basis: 10%;
+   }
+
+
