@@ -540,10 +540,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.generalInfoContainer .infoEmail {
+.generalInfoContainer .infoContainer .infoEmail {
   font-family: "Playfair Display", serif;
   font-size: 2.6rem;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 3%;
 }
 
 body {
@@ -860,8 +862,10 @@ footer p {
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
+  background-color: #FAFAFA;
   border: #4CEEA7 3px solid;
   margin-bottom: 3%;
+  padding: 20px;
 }
 .contactFormContainer textarea.messageInput:hover, .contactFormContainer textarea.messageInput:focus {
   border: #4CEEA7 7px solid;
@@ -873,6 +877,7 @@ footer p {
   width: 90%;
   padding-bottom: 2%;
   padding-left: 2%;
+  background-color: #FAFAFA;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -901,6 +906,7 @@ footer p {
 }
 
 #name, #mail {
+  background-color: #EFFDF3;
   width: 90%;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -920,6 +926,7 @@ footer p {
 }
 
 textarea.input {
+  background-color: #EFFDF3;
   border: #4CEEA7 3px solid;
   width: 100%;
   padding: 20px;
@@ -1012,6 +1019,9 @@ button {
   font-style: italic;
 }
 
+.formButton {
+  margin-top: 5%;
+}
 .formButton button {
   width: 100%;
 }
