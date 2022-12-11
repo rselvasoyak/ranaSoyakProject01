@@ -60,13 +60,11 @@
                 width: 100%;
                 .nameContainer, .emailContainer {
                     flex-basis: 100%;
-                    background-color: $lighterGreen;
                 }
             }
         }
     }
         #name, #mail {
-            background-color: $lighterGreen;
             width: 90%;
             padding-bottom: 2%;
             padding-left: 2%;
