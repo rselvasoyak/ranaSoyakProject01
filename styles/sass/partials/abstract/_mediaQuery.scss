@@ -209,6 +209,48 @@
                         margin-top: 1%;
                 }
             }
+
+        // BLOG PAGE
+        .bigBlogContentContainer {
+            top: 20rem;
+            flex-direction: column;
+            margin-right: 4%;
+            .asideContainer{
+                margin-top: 1%;
+            }
+            .asideSideInfoBox {
+                width: 100%;
+                margin-right: 5%;
+                .asideImageContainer{
+                    width: 100%;
+                }
+            }
+            .blogMainImageContainer {
+                margin-left: 7%;
+                margin-right: 2%;
+            }
+            .contentContainer {
+                .wrapper{
+                    text-align: center;
+                    margin-left: 7%;
+                }
+            }
+
+            .commentImageContainer{
+                flex-basis: 30%;
+            }
+            .commentsContainer{
+                .comment{
+                    align-items: center;
+                }
+                .commentContent {
+                    width: 90%;
+                } 
+            } 
+        }
+        .blogFooter{
+            visibility: hidden;
+        }
     }        
         
 

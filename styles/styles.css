@@ -570,11 +570,11 @@ body {
 
 .asideContainer {
   padding-left: 5%;
-  margin-top: 28%;
+  margin-top: 25%;
 }
 
 .asideSideInfoBox {
-  background-color: magenta;
+  background-color: #FAFAFA;
   width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -589,7 +589,6 @@ body {
 }
 
 .asideContentContainer {
-  background-color: red;
   max-width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,7 +650,7 @@ body {
   margin-bottom: 3%;
 }
 .blogContentSection h2 {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .commentsContainer {
@@ -879,6 +878,47 @@ blockquote {
     font-size: 16px;
     margin-bottom: 0;
     margin-top: 1%;
+  }
+  .bigBlogContentContainer {
+    top: 20rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 4%;
+  }
+  .bigBlogContentContainer .asideContainer {
+    margin-top: 1%;
+  }
+  .bigBlogContentContainer .asideSideInfoBox {
+    width: 100%;
+    margin-right: 5%;
+  }
+  .bigBlogContentContainer .asideSideInfoBox .asideImageContainer {
+    width: 100%;
+  }
+  .bigBlogContentContainer .blogMainImageContainer {
+    margin-left: 7%;
+    margin-right: 2%;
+  }
+  .bigBlogContentContainer .contentContainer .wrapper {
+    text-align: center;
+    margin-left: 7%;
+  }
+  .bigBlogContentContainer .commentImageContainer {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .bigBlogContentContainer .commentsContainer .comment {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bigBlogContentContainer .commentsContainer .commentContent {
+    width: 90%;
+  }
+  .blogFooter {
+    visibility: hidden;
   }
 }
 ul, li {
