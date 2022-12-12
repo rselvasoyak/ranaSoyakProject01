@@ -570,6 +570,7 @@ body {
 
 .asideContainer {
   padding-left: 5%;
+  margin-top: 28%;
 }
 
 .asideSideInfoBox {
@@ -987,6 +988,7 @@ header .wrapper nav .hamburgerMenu .dropdownMenu i {
 
 footer {
   height: 4vh;
+  width: 100%;
   background-color: #2C2C2C;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,6 +1004,8 @@ footer {
 .blogFooter {
   margin: 0;
   padding: 0;
+  position: absolute;
+  bottom: -200%;
 }
 
 .contactFormContainer {
