@@ -1170,6 +1170,7 @@ textarea.input:hover, textarea.input:focus {
 }
 
 a {
+  fill: #2C2C2C;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
