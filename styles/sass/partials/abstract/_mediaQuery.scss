@@ -1,31 +1,76 @@
 @use "../abstract/variables" as *;
 
 // Media Query Mixins 
-    @mixin desktopLayout {
         @media (max-width: 1200px) {
-            @content;
-        }
-    }
+            header h1{
+                   font-size: 10rem;
+                }   
+            }
 
-    @mixin tabletOnlyLayout {
         @media (max-width: 850px) {
-            @content;
+            // Index Header
+            header{
+                background-color: $whiteTone;
+                h1{
+                    top: 0.5em;
+                    left: 0;
+                }
+            }
+            header ul{
+                  
+                                  background-color: red;
+                                  visibility: hidden;
+            }
+            .hamburgerMenu .dropdownMenu{
+                
+                                visibility: visible;
+                                width: 100%;
+                                position: absolute;
+                                    z-index: 30;
+                            
+            }
+            .headerImg {
+                visibility: hidden;
+            }                   
+            // .headerBoxContainer {
+            //     z-index: 0;
+            // }
+    
+        // What is captured? 
+            .capturedInfo {
+                padding-top: 0;
+            }
+            .capturedContent{
+                z-index: 20;
+            }
+
+        // Blog Section 
+        .topRowBlogContainer, .bottomRowBlogContainer {
+            flex-direction: column;
+            .blogImg {
+                position: static;
+                img{
+                    position: static;
+                }
+            }
+        }
+        .contentContainer p{
+            text-align: center;
+        }
+
+        .linkContainer {
+            width: 100%;
         }
     }
 
-    @mixin mobileOnlyLayout {
         @media (max-width: 500px) {
-            @content;
+            
         }
-    }
 
-// Header Image Box (Home and Blog Page) Mixin ?????
-    // @mixin headerBox {
-    //      position: absolute;
-    //         right: 0;
-    //         bottom: -25rem;
-    //         z-index: 10;
-    //     max-width: 100%;
-    //     width: 48vw;
-    // }
+        @media (max-width: 320px){
+           
+        }
+
+
+   
 

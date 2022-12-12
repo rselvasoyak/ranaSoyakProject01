@@ -18,7 +18,7 @@
             h1{
                 width: 100%;
                 position: absolute;
-                    bottom: 15rem;
+                    bottom: 0.8em;
                     z-index: 20;
             }
             .wrapper{
@@ -31,10 +31,6 @@
                             z-index: 30;
                             display: flex;
                         ul{
-                            @include tabletOnlyLayout {
-                                  background-color: red;
-                                  visibility: hidden;
-                              }
                             display: flex;
                             li{
                                 margin-left: 10rem;
@@ -76,12 +72,6 @@
                                         position: absolute;
                                     }
                                 }
-                            @include tabletOnlyLayout {
-                                visibility: visible;
-                                width: 100%;
-                                position: absolute;
-                                    z-index: 30;
-                            }
                         }/* .hamburgerMenu {} Ending */
                     }/* nav {} ending */
             }/* .wrapper ending */
@@ -103,32 +93,11 @@
                 border-left: 65px solid $yellowTone;
         }
 
-// Contact Page Header Elements 
-
-
-// Blog Page Header Elements 
-    // Header Side Box Image (Blog)
-        // .headerBlogBoxContainer {
-        //     position: absolute;
-        //     right: 4rem;
-        //     bottom: -50rem;
-        //     z-index: 10;
-        //     max-width: 100%;
-        //     width: 50vw;
-        //     .blogBoxInnerContainer{
-        //         background-color: $yellowTone;
-        //         position: relative;
-
-        //         img {
-        //             position: absolute;
-        //         }
-        //     }
-        // }
 
 // Contact Page and Blog Page H1 
         .secondH1 h1 {
             position: absolute;
-            top: 15rem;
+            top: 40rem;
         }
 
   

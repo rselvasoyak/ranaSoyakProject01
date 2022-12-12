@@ -28,10 +28,14 @@ img {
 
 
 // Blog Page
- .asideImageContainer{
-            position: absolute;
+ .asideSideInfoBox .asideImageContainer{
+            position: relative;
             left: -8rem;
             max-width: 100%;
+            img {
+               position: relative; 
+               left: 0;
+            }
     }
 
 .blogMainImageContainer {

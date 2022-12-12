@@ -110,14 +110,14 @@
 
     .linkContainer{
         display: flex;
-        flex-basis: 48%; 
+        width: calc(50% - 50px);
         margin-top: 2%;
             margin-bottom: 2%;
         .linkIcon {
-            display: flex;
-                justify-content: flex-start;
-                flex-basis: 20%;
-            padding-top: 1%;
+           min-width: 50px;
+                max-width: 50px;
+            min-height: 50px;
+                max-height: 50px;
         }
         .content {
             display: flex;

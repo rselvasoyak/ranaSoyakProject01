@@ -247,7 +247,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: clamp(5rem, 13vw, 18rem);
+  font-size: clamp(2rem, 13vw, 18rem);
   font-weight: 700;
   font-style: italic;
   text-align: center;
@@ -276,6 +276,15 @@ h3 {
 h4 {
   font-size: 2.6rem;
   letter-spacing: 1.1px;
+}
+
+p {
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+}
+
+footer p {
+  color: #FAFAFA;
 }
 
 .capturedInfo {
@@ -419,21 +428,15 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  width: calc(50% - 50px);
   margin-top: 2%;
   margin-bottom: 2%;
 }
 .linkContainer .linkIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  padding-top: 1%;
+  min-width: 50px;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
 }
 .linkContainer .content {
   display: -webkit-box;
@@ -504,7 +507,7 @@ body {
 }
 
 .generalInfoContainer {
-  padding-top: 7%;
+  padding-top: 11%;
   padding-bottom: 10%;
 }
 .generalInfoContainer .wrapper {
@@ -512,6 +515,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 .generalInfoContainer .socialMediaContainer {
   display: -webkit-box;
@@ -685,6 +689,57 @@ blockquote {
   display: flex;
 }
 
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 850px) {
+  header {
+    background-color: #FAFAFA;
+  }
+  header h1 {
+    top: 0.5em;
+    left: 0;
+  }
+  header ul {
+    background-color: red;
+    visibility: hidden;
+  }
+  .hamburgerMenu .dropdownMenu {
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    z-index: 30;
+  }
+  .headerImg {
+    visibility: hidden;
+  }
+  .capturedInfo {
+    padding-top: 0;
+  }
+  .capturedContent {
+    z-index: 20;
+  }
+  .topRowBlogContainer, .bottomRowBlogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topRowBlogContainer .blogImg, .bottomRowBlogContainer .blogImg {
+    position: static;
+  }
+  .topRowBlogContainer .blogImg img, .bottomRowBlogContainer .blogImg img {
+    position: static;
+  }
+  .contentContainer p {
+    text-align: center;
+  }
+  .linkContainer {
+    width: 100%;
+  }
+}
 ul, li {
   margin: 0;
   padding: 0;
@@ -704,7 +759,7 @@ header {
 header h1 {
   width: 100%;
   position: absolute;
-  bottom: 15rem;
+  bottom: 0.8em;
   z-index: 20;
 }
 header .wrapper {
@@ -728,12 +783,6 @@ header .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media (max-width: 850px) {
-  header .wrapper nav ul {
-    background-color: red;
-    visibility: hidden;
-  }
 }
 header .wrapper nav ul li {
   margin-left: 10rem;
@@ -777,14 +826,6 @@ header .wrapper nav .hamburgerMenu .dropdownMenu {
 header .wrapper nav .hamburgerMenu .dropdownMenu i {
   position: absolute;
 }
-@media (max-width: 850px) {
-  header .wrapper nav .hamburgerMenu {
-    visibility: visible;
-    width: 100%;
-    position: absolute;
-    z-index: 30;
-  }
-}
 
 /* header {} ending */
 .headerBoxContainer {
@@ -801,7 +842,7 @@ header .wrapper nav .hamburgerMenu .dropdownMenu i {
 
 .secondH1 h1 {
   position: absolute;
-  top: 15rem;
+  top: 40rem;
 }
 
 footer {
@@ -817,8 +858,10 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-footer p {
-  color: #FAFAFA;
+
+.blogFooter {
+  margin: 0;
+  padding: 0;
 }
 
 .contactFormContainer {
@@ -835,7 +878,7 @@ footer p {
   top: 65rem;
   border-bottom: 40px solid #FDFA69;
   border-left: 40px solid #FDFA69;
-  width: 45%;
+  width: 60%;
   padding-left: 3%;
   padding-bottom: 4%;
   padding-top: 4%;
@@ -857,6 +900,9 @@ footer p {
   border-bottom: #4CEEA7 7px solid;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+.contactFormContainer .contactFormTopRow #contactEmail, .contactFormContainer .contactFormTopRow #contactName {
+  padding: 20px;
 }
 .contactFormContainer textarea.messageInput {
   border-top-style: hidden;
@@ -908,6 +954,7 @@ footer p {
 #name, #mail {
   background-color: #EFFDF3;
   width: 90%;
+  padding: 20px;
   padding-bottom: 2%;
   padding-left: 2%;
   border-top-style: hidden;
@@ -980,17 +1027,16 @@ a:hover, a:focus {
 
 .linkIcon {
   background-color: #4CEEA7;
-  height: 100%;
+  height: 40px;
+  width: 50px;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  padding-top: 1%;
+  position: relative;
 }
 .linkIcon a {
   text-align: center;
+  position: absolute;
+  top: 8px;
+  right: 15px;
 }
 
 button {
@@ -1055,10 +1101,14 @@ img {
           box-shadow: 40px 40px 3px #FDFA69;
 }
 
-.asideImageContainer {
-  position: absolute;
+.asideSideInfoBox .asideImageContainer {
+  position: relative;
   left: -8rem;
   max-width: 100%;
+}
+.asideSideInfoBox .asideImageContainer img {
+  position: relative;
+  left: 0;
 }
 
 .blogMainImageContainer {

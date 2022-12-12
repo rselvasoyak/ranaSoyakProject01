@@ -7,10 +7,11 @@ body {
 
 // Information and Social Media Section
 .generalInfoContainer{
-    padding-top: 7%;
+    padding-top: 11%;
     padding-bottom: 10%;
     .wrapper {
         flex-direction: column;
+        width: 100%;
     }
     .socialMediaContainer{
         display: flex;

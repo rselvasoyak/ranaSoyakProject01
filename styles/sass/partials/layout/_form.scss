@@ -11,7 +11,7 @@
             top: 65rem;
         border-bottom: 40px solid $yellowTone;
         border-left: 40px solid $yellowTone;
-        width: 45%;
+        width: 60%;
         padding-left: 3%;
             padding-bottom: 4%;
             padding-top: 4%;
@@ -26,7 +26,10 @@
                     &:hover, &:focus {
                     border-bottom: $darkerGreenTone 7px solid;
                     transition: 0.4s;
-            }
+                    }
+                }
+                #contactEmail, #contactName{
+                    padding: 20px;
                 }
             }
         textarea.messageInput{
@@ -70,6 +73,7 @@
         #name, #mail {
             background-color: $lighterGreenTone;
             width: 90%;
+            padding: 20px;
             padding-bottom: 2%;
             padding-left: 2%;
             @include appearance;
