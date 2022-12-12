@@ -717,10 +717,20 @@ blockquote {
   header .headerImg {
     visibility: hidden;
   }
+  header .headerBoxContainer {
+    bottom: -15rem;
+    border-top: 40px solid #FDFA69;
+    border-bottom: 30px solid #FDFA69;
+    border-left: 30px solid #FDFA69;
+  }
   .capturedInfo {
     padding-top: 0;
   }
-  .capturedContent {
+  .capturedInfo .wrapper {
+    margin-top: 19%;
+    margin-bottom: 4%;
+  }
+  .capturedInfo .capturedContent {
     z-index: 20;
   }
   .blogContainer .topRowBlogContainer {
@@ -745,8 +755,20 @@ blockquote {
     margin-bottom: 2%;
     text-align: center;
   }
-  .topRowBlogContainer .linkContainer {
+  .linkContainer {
     width: 100%;
+  }
+  .linkContainer .linkIcon {
+    background-color: transparent;
+  }
+  .linkContainer .linkIcon a i {
+    visibility: hidden;
+  }
+  .linkContainer .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
   }
   .blogContainer .topRowBlogContainer .contentContainer {
     margin-left: 15%;
@@ -781,6 +803,8 @@ blockquote {
   .blogContainer .bottomRowBlogContainer .container2 {
     text-align: center;
     margin-left: 14%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .blogContainer .bottomRowBlogContainer .wrapper h3, .blogContainer .bottomRowBlogContainer .wrapper p {
     text-align: center;
@@ -788,6 +812,33 @@ blockquote {
   .blogContainer .bottomRowBlogContainer .wrapper a {
     -ms-flex-item-align: center;
         align-self: center;
+  }
+  .thisMonthsProfile .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .thisMonthsProfile .wrapper .profileContentContainer {
+    text-align: center;
+    padding-left: 0;
+  }
+  .thisMonthsProfile .profileImageContainer {
+    margin-right: 7%;
+    margin-left: 3%;
+    margin-bottom: 5%;
+  }
+  .thisMonthsProfile .findOutMore {
+    margin-top: 2%;
+  }
+  .photoGallerySection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .photoGallerySection .galleryContainer {
+    margin: 5%;
   }
 }
 ul, li {
