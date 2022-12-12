@@ -31,11 +31,11 @@
 
 // Blog Container
     .blogContainer {
+        background-color: $whiteTone;
         display: flex;
             flex-direction: column;
         .topRowBlogContainer{
             display: flex;
-            // justify-content: flex-end;
             margin-bottom: 8%;
             .blogImg {
                 position: relative;
@@ -45,7 +45,6 @@
                 margin-left: 17%;
                     margin-top: 5%;
                     margin-bottom: 5%;
-                    // is it better to use margin or padding in this situation?
                 flex-basis: 38%;
                 .wrapper{
                     flex-direction: column;
@@ -68,20 +67,17 @@
                 flex-basis: 40%;
                 margin-left: 15%;
                 margin-top: 4%;
-                // is it better to use margin or padding in this situation?
             }
             .contentContainer{
                 flex-basis: 38%;
                 margin-top: 2%;
                     margin-bottom: 5%;
-                    // is it better to use margin or padding in this situation?
                 .wrapper{
                     flex-direction: column;
                     text-align: end;
                 }
             }
                 .wrapper p{
-                    // text-align: left;
                     padding-top: 2%;
                         padding-bottom:2%;
                 }
@@ -150,6 +146,7 @@
 
 // Photo Gallery Section
 .photoGallerySection {
+    background-color: $whiteTone;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;

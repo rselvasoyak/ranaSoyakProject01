@@ -326,6 +326,7 @@ footer p {
 }
 
 .blogContainer {
+  background-color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,6 +481,7 @@ footer p {
 }
 
 .photoGallerySection {
+  background-color: #FAFAFA;
   padding-top: 5%;
   padding-bottom: 5%;
   display: -webkit-box;
@@ -706,13 +708,13 @@ blockquote {
     background-color: red;
     visibility: hidden;
   }
-  .hamburgerMenu .dropdownMenu {
+  header .hamburgerMenu .dropdownMenu {
     visibility: visible;
     width: 100%;
     position: absolute;
     z-index: 30;
   }
-  .headerImg {
+  header .headerImg {
     visibility: hidden;
   }
   .capturedInfo {
@@ -721,23 +723,71 @@ blockquote {
   .capturedContent {
     z-index: 20;
   }
-  .topRowBlogContainer, .bottomRowBlogContainer {
+  .blogContainer .topRowBlogContainer {
+    margin-bottom: 1%;
+  }
+  .topRowBlogContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .topRowBlogContainer .blogImg, .bottomRowBlogContainer .blogImg {
+  .topRowBlogContainer .blogImg {
+    position: static;
+    margin-right: 10%;
+    margin-left: 7%;
+  }
+  .topRowBlogContainer .blogImg img {
     position: static;
   }
-  .topRowBlogContainer .blogImg img, .bottomRowBlogContainer .blogImg img {
-    position: static;
-  }
-  .contentContainer p {
+  .topRowBlogContainer .container1 {
+    margin-top: 20%;
+    margin-bottom: 2%;
     text-align: center;
   }
-  .linkContainer {
+  .topRowBlogContainer .linkContainer {
     width: 100%;
+  }
+  .blogContainer .topRowBlogContainer .contentContainer {
+    margin-left: 15%;
+  }
+  .blogContainer .topRowBlogContainer .contentContainer .wrapper a {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blogContainer .topRowBlogContainer .contentContainer h3 {
+    margin-top: 5%;
+  }
+  .blogContainer .topRowBlogContainer .contentContainer p {
+    text-align: center;
+  }
+  .blogContainer .bottomRowBlogContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .blogContainer .bottomRowBlogContainer .blogImg {
+    position: static;
+    margin-top: 0;
+    margin-right: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+  .blogContainer .bottomRowBlogContainer .blogImg img {
+    position: static;
+  }
+  .blogContainer .bottomRowBlogContainer .container2 {
+    text-align: center;
+    margin-left: 14%;
+  }
+  .blogContainer .bottomRowBlogContainer .wrapper h3, .blogContainer .bottomRowBlogContainer .wrapper p {
+    text-align: center;
+  }
+  .blogContainer .bottomRowBlogContainer .wrapper a {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 ul, li {

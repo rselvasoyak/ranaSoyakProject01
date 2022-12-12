@@ -14,54 +14,107 @@
                 h1{
                     top: 0.5em;
                     left: 0;
+                } 
+                ul{
+                    background-color: red;
+                    visibility: hidden;
                 }
+                .hamburgerMenu .dropdownMenu{
+                    visibility: visible;
+                    width: 100%;
+                    position: absolute;
+                        z-index: 30;    
+                }
+                .headerImg {
+                    visibility: hidden;
+                }                   
             }
-            header ul{
-                  
-                                  background-color: red;
-                                  visibility: hidden;
-            }
-            .hamburgerMenu .dropdownMenu{
-                
-                                visibility: visible;
-                                width: 100%;
-                                position: absolute;
-                                    z-index: 30;
-                            
-            }
-            .headerImg {
-                visibility: hidden;
-            }                   
-            // .headerBoxContainer {
-            //     z-index: 0;
-            // }
+
+
+            // Index- What is captured? 
+                .capturedInfo {
+                    padding-top: 0;
+                }
+                .capturedContent{
+                    z-index: 20;
+                }
+
+
+            // Index - Blog Section 
+                // Top Row 
+                .blogContainer {
+                    .topRowBlogContainer{
+                        margin-bottom: 1%;
+                    }
+                }
+                .topRowBlogContainer{
+                    flex-direction: column;
+                    .blogImg {
+                        position: static;
+                        margin-right: 10%;
+                            margin-left: 7%;
+                        img{
+                            position: static;
+                        }
+                    }
+                    .container1{
+                            margin-top: 20%;
+                            margin-bottom: 2%;
+                            text-align: center;
+                        }
     
-        // What is captured? 
-            .capturedInfo {
-                padding-top: 0;
-            }
-            .capturedContent{
-                z-index: 20;
-            }
-
-        // Blog Section 
-        .topRowBlogContainer, .bottomRowBlogContainer {
-            flex-direction: column;
-            .blogImg {
-                position: static;
-                img{
-                    position: static;
+                    .linkContainer {
+                        width: 100%;
+                    }
                 }
+                    .blogContainer .topRowBlogContainer{
+                        .contentContainer {
+                            margin-left: 15%;
+                            .wrapper a{
+                                align-self: center;
+                            }  
+                            h3{
+                                margin-top: 5%;
+                            }
+                            p{
+                                text-align: center;
+                            }
+                        }   
+                    }
+                // Bottom Row
+                .blogContainer {
+                    .bottomRowBlogContainer{
+                        flex-direction: column;
+                        margin-top: 0;
+                        .blogImg {
+                            position: static;
+                            margin-top: 0;
+                                margin-right: 5%;
+                                margin-left: 10%;
+                                margin-bottom: 5%;
+                            img{
+                                position: static;
+                            }
+                        }
+                        .container2{
+                             text-align: center;
+                             margin-left: 14%;
+                        }
+                        .wrapper {
+                            h3, p{
+                                text-align: center;
+                            }
+                            a {
+                                align-self: center;
+                            }
+                        }
+                    }
+                }
+                
+                
+                // Index - Link Container 
             }
-        }
-        .contentContainer p{
-            text-align: center;
-        }
-
-        .linkContainer {
-            width: 100%;
-        }
-    }
+        
 
         @media (max-width: 500px) {
             
