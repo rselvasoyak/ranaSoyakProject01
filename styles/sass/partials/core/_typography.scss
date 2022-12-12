@@ -33,7 +33,7 @@
     }
 
         .secondH1 h1 {
-            font-size: clamp(4rem, $secondaryFontSize80, 14rem);
+            font-size: clamp(1rem, 10vw, 14rem);
             line-height: $primaryLineHeight92;
             text-transform: uppercase;
         }

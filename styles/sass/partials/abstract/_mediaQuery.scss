@@ -9,163 +9,207 @@
 
         @media (max-width: 850px) {
             // Index Header
-            header{
-                background-color: $whiteTone;
-                h1{
-                    top: 0.5em;
-                    left: 0;
-                } 
-                ul{
-                    background-color: red;
-                    visibility: hidden;
-                }
-                .hamburgerMenu .dropdownMenu{
-                    visibility: visible;
-                    width: 100%;
-                    position: absolute;
-                        z-index: 30;    
-                }
-                .headerImg {
-                    visibility: hidden;
-                }      
-                .headerBoxContainer {
-                    bottom: -15rem;
-                    border-top: 40px solid #FDFA69;
-                    border-bottom: 30px solid #FDFA69;
-                    border-left: 30px solid #FDFA69;
-                }
-            }    
-
-    
-
-
-            // Index- What is captured? 
-            .capturedInfo {
-                padding-top: 0;
-                .wrapper{
-                    margin-top: 19%;
-                    margin-bottom: 4%;
-                }
-                .capturedContent{
-                    z-index: 20;
-
-                }
-            }
-
-
-            // Index - Blog Section 
-                // Top Row 
-            .blogContainer {
-                .topRowBlogContainer{
-                    margin-bottom: 1%;
-                }
-            }
-            .topRowBlogContainer{
-                flex-direction: column;
-                .blogImg {
-                    position: static;
-                    margin-right: 10%;
-                        margin-left: 7%;
-                    img{
-                        position: static;
+                header{
+                    background-color: $whiteTone;
+                    h1{
+                        top: 0.5em;
+                        left: 0;
+                    } 
+                    ul{
+                        background-color: red;
+                        visibility: hidden;
                     }
-                }
-                .container1{
-                        margin-top: 20%;
-                        margin-bottom: 2%;
-                        text-align: center;
-                }
-            }
-                    .linkContainer {
+                    .hamburgerMenu .dropdownMenu{
+                        visibility: visible;
                         width: 100%;
-                        .linkIcon{
-                            background-color: transparent;
-                            a i{
-                                visibility: hidden;
-                            }
-                        }
-                        .content{
-                            align-items: center;
-                            text-align: center;
-                        }
+                        position: absolute;
+                            z-index: 30;    
                     }
-                .blogContainer .topRowBlogContainer{
-                    .contentContainer {
-                        margin-left: 15%;
-                        .wrapper a{
-                            align-self: center;
-                        }  
-                        h3{
-                            margin-top: 5%;
-                        }
-                        p{
-                            text-align: center;
-                        }
-                    }   
+                    .headerImg {
+                        visibility: hidden;
+                    }      
+                    .headerBoxContainer {
+                        bottom: -15rem;
+                        border-top: 40px solid #FDFA69;
+                        border-bottom: 30px solid #FDFA69;
+                        border-left: 30px solid #FDFA69;
+                    }
+                }    
+
+        
+
+
+                // Index- What is captured? 
+                .capturedInfo {
+                    padding-top: 0;
+                    .wrapper{
+                        margin-top: 19%;
+                        margin-bottom: 4%;
+                    }
+                    .capturedContent{
+                        z-index: 20;
+
+                    }
                 }
 
-            // Bottom Row
-            .blogContainer {
-                .bottomRowBlogContainer{
+
+                // Index - Blog Section 
+                    // Top Row 
+                .blogContainer {
+                    .topRowBlogContainer{
+                        margin-bottom: 1%;
+                    }
+                }
+                .topRowBlogContainer{
                     flex-direction: column;
-                    margin-top: 0;
                     .blogImg {
                         position: static;
-                        margin-top: 0;
-                            margin-right: 5%;
-                            margin-left: 10%;
-                            margin-bottom: 5%;
+                        margin-right: 10%;
+                            margin-left: 7%;
                         img{
                             position: static;
                         }
                     }
-                    .container2{
+                    .container1{
+                            margin-top: 20%;
+                            margin-bottom: 2%;
                             text-align: center;
-                            margin-left: 14%;
-                            margin-top: 5%;
+                    }
+                }
+                        .linkContainer {
+                            width: 100%;
+                            .linkIcon{
+                                background-color: transparent;
+                                a i{
+                                    visibility: hidden;
+                                }
+                            }
+                            .content{
+                                align-items: center;
+                                text-align: center;
+                            }
+                        }
+                    .blogContainer .topRowBlogContainer{
+                        .contentContainer {
+                            margin-left: 15%;
+                            .wrapper a{
+                                align-self: center;
+                            }  
+                            h3{
+                                margin-top: 5%;
+                            }
+                            p{
+                                text-align: center;
+                            }
+                        }   
+                    }
+
+                // Bottom Row
+                .blogContainer {
+                    .bottomRowBlogContainer{
+                        flex-direction: column;
+                        margin-top: 0;
+                        .blogImg {
+                            position: static;
+                            margin-top: 0;
+                                margin-right: 5%;
+                                margin-left: 10%;
+                                margin-bottom: 5%;
+                            img{
+                                position: static;
+                            }
+                        }
+                        .container2{
+                                text-align: center;
+                                margin-left: 14%;
+                                margin-top: 5%;
+                                margin-bottom: 5%;
+                        }
+                        .wrapper {
+                            h3, p{
+                                text-align: center;
+                            }
+                            a {
+                                align-self: center;
+                            }
+                        }
+                    }
+                }
+
+                // Index Page - This Months Profile
+                .thisMonthsProfile {
+                    .wrapper{
+                        flex-direction: column;
+                        .profileContentContainer {
+                            text-align: center;
+                            padding-left: 0;
+                        }
+                    }
+                    .profileImageContainer {
+                        margin-right: 7%;
+                            margin-left: 3%;
                             margin-bottom: 5%;
+                    } 
+                    .findOutMore {
+                        margin-top: 2%;
                     }
+                }
+
+                // Index - Photo Gallery 
+                .photoGallerySection{
                     .wrapper {
-                        h3, p{
-                            text-align: center;
-                        }
-                        a {
-                            align-self: center;
-                        }
+                        flex-direction: column;  
                     }
+                    .galleryContainer{
+                        margin: 5%;
+                    }      
+                }
+        
+        // CONTACT PAGE
+        header{
+            .secondH1 h1{
+                top: 10%;
+                span{
+                    display: block;
                 }
             }
-
-            // Index Page - This Months Profile
-            .thisMonthsProfile {
+            .contactFormContainer {
+                width: 55%;
+                padding-top: 0;
+                    padding-bottom: 1%;
+                top: 80%;
+                    right:3%;
+                .contactFormTopRow {
+                display: flex;
+                width: 100%;
+                margin-bottom: 2%;
+                    #contactEmail, #contactName{
+                        width: 96%;
+                    }
+                }   
+                textarea.messageInput {
+                    margin-bottom: 1%;
+                    padding-bottom: 0;
+                    max-height: 30rem;
+                }
+                .contactMessageButton {
+                    margin-top: 1%;
+                }
+            }
+        } 
+        
+            // General Info Container
+            .generalInfoContainer {
                 .wrapper{
-                    flex-direction: column;
-                    .profileContentContainer {
-                        text-align: center;
-                        padding-left: 0;
-                    }
+                    padding-left: 4%;
                 }
-                .profileImageContainer {
-                    margin-right: 7%;
-                        margin-left: 3%;
-                        margin-bottom: 5%;
-                } 
-                .findOutMore {
-                    margin-top: 2%;
+                p{
+                    font-size: 16px;
+                    margin-bottom: 0;
+                        margin-top: 1%;
                 }
             }
-
-            // Index - Photo Gallery 
-            .photoGallerySection{
-                .wrapper {
-                    flex-direction: column;  
-                }
-                .galleryContainer{
-                    margin: 5%;
-                }      
-            }            
-    }          
-            
+    }        
         
 
         @media (max-width: 500px) {
