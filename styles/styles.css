@@ -704,8 +704,7 @@ blockquote {
     top: 0.5em;
     left: 0;
   }
-  header ul {
-    background-color: red;
+  header .desktopNav {
     visibility: hidden;
   }
   header .hamburgerMenu .dropdownMenu {
@@ -960,12 +959,12 @@ header .wrapper nav {
   /* a {} ending */
   /* .hamburgerMenu {} Ending */
 }
-header .wrapper nav ul {
+header .wrapper nav .desktopNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .wrapper nav ul li {
+header .wrapper nav .desktopNav li {
   margin-left: 10rem;
 }
 header .wrapper nav a {
@@ -977,14 +976,15 @@ header .wrapper nav a {
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
   text-align: center;
   text-transform: uppercase;
   color: inherit;
 }
 header .wrapper nav a:hover, header .wrapper nav a:focus {
   border-bottom: #4CEEA7 3px solid;
+  color: palevioletred;
 }
 header .wrapper nav .hamburgerMenu {
   visibility: hidden;
@@ -1006,6 +1006,9 @@ header .wrapper nav .hamburgerMenu .dropdownMenu {
 }
 header .wrapper nav .hamburgerMenu .dropdownMenu i {
   position: absolute;
+}
+header .wrapper nav .hamburgerMenu .dropdownMenu i:hover, header .wrapper nav .hamburgerMenu .dropdownMenu i:focus {
+  color: blue;
 }
 
 /* header {} ending */
@@ -1176,12 +1179,13 @@ a {
   text-align: center;
   margin: 0;
   padding: 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 a:hover, a:focus {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  color: red;
 }
 
 .findOutMore {

@@ -8,9 +8,10 @@
         text-align: center;
         margin: 0;
         padding: 0;
+        transition: 0.2s ease;
         &:hover, &:focus {
-                transition: 0.2s;
                 transform: scale(1.5);
+                color: red;
             }
     }
 
