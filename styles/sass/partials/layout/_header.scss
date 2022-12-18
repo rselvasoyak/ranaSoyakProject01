@@ -14,6 +14,17 @@
 
 
     // Header Navigation - With Hover/ Focus and Styling
+
+    .linkActive {
+    visibility: visible !important;
+    display: flex !important;
+        flex-direction: column;
+    display: -webkit-box !important;
+    padding-left: 20px;
+        padding-bottom: 10px;
+        
+    }
+
     header {
         position: relative;
             h1{
@@ -25,8 +36,7 @@
             .wrapper{
                 justify-content: end;
                     nav{
-                            // background-color: blue;
-                            max-width: 100%;
+                           max-width: 100%;
                             position: absolute;
                             padding-top: 4rem;
                             z-index: 30;

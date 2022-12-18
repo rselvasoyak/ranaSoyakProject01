@@ -1,7 +1,7 @@
 /* Pseudo Code */
 
-// Hamburger Menu - JS 
-    // CSS - max-width:850px;
+  // Hamburger Menu - JS 
+    // CSS - @media(max-width:850px);
         // Nav Bar styling (visibility: hidden)
         // Showing State Styling (.linkActive)
     // JS
@@ -15,11 +15,18 @@
                 // add a class to apear and add that class? .linkAppear 
                 // if the class is present --> on click, remove the class so it dissapears
                 // else, add the class 
+                const toggleButton =  document.querySelector('.hamburgerMenu');
 
-    // Select 
-    // Create a function 
-    // Pass the function as an argument#2
+                function toggleNav () {
+                    const navMenu = document.querySelectorAll('.desktopNav');
+                    navMenu.forEach( ul => ul.classList.toggle('linkActive'));
+                } 
 
+                toggleButton.addEventListener('click', toggleNav);
+
+
+
+ 
 
     
     

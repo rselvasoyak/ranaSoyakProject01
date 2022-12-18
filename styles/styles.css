@@ -706,6 +706,11 @@ blockquote {
   }
   header .desktopNav {
     visibility: hidden;
+    display: none;
+    display: -webkit-box-none;
+  }
+  header .hamburgerMenu {
+    top: 20%;
   }
   header .hamburgerMenu .dropdownMenu {
     visibility: visible;
@@ -721,6 +726,9 @@ blockquote {
     border-top: 40px solid #FDFA69;
     border-bottom: 30px solid #FDFA69;
     border-left: 30px solid #FDFA69;
+  }
+  header .wrapper nav .hamburgerMenu {
+    top: 20%;
   }
   .capturedInfo {
     padding-top: 0;
@@ -930,6 +938,19 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.linkActive {
+  visibility: visible !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box !important;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 header {

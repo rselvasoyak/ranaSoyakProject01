@@ -16,8 +16,12 @@
                         left: 0;
                     } 
                     .desktopNav{
-                        // background-color: red;
                         visibility: hidden;
+                        display: none;
+                        display: -webkit-box-none;
+                    }
+                    .hamburgerMenu{
+                        top: 20%;
                     }
                     .hamburgerMenu .dropdownMenu{
                         visibility: visible;
@@ -34,10 +38,10 @@
                         border-bottom: 30px solid #FDFA69;
                         border-left: 30px solid #FDFA69;
                     }
-                }    
-
-        
-
+                } 
+                header .wrapper nav .hamburgerMenu {
+                    top: 20%;
+                }   
 
                 // Index- What is captured? 
                 .capturedInfo {
