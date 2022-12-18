@@ -27,83 +27,21 @@
 
 
 
-// Comment Section - it is a form 
-        // Have a section on HTML where you can display the user input. \
-
-    // ADDING A COMMENT + PICTURE TO THE COMMENT SECTION
-        //User Inputs the comment into the "Message Area"- when the user submits the form 
-            // Event Listener on the "post comment" button 
-                // prevent default 
-                // Registering Event 
-                // Target: HTML element 95%
-                // addEventListener: 
-                // 'event: submit
-                // eventHandler: make the comment to appear below the other comments
-                    // who: 
-            // Slap the form input information in a variable -> userComment - stay somewhere
-                // Name
-
-                // Email 
-
-                // Message
-                
-        // It is going to go in an div container with class .comment
-            // create a div with <div class = "commentImageContainer"> for user photo 
-                // add image with source in it
-            // create a div for comment text <div class = "commentContent"></div> 
-                // Have the date update to the time that it is submitted
-        // add the commentImageContainer and then the commentContent section in the comment div
-
-// target the button 
-    const postCommentButton = document.querySelector('.formButton button');
-    console.log(postCommentButton);
-// preventdefault() for form 
-// grab the user input - form 
-    const blogFormElement = document.querySelector(".blogForm")
-    console.log(blogFormElement);
-
-
-// Add a new content to "comment3" section 
- 
-    // Add values in a template literal 
-
-
-    // Where will the event be targeted? button
-
-
-
-
-
-        
-        // Append the stored comment value in the in the following format  
-            // Comment Time Stamp 
-                const commentTimeStamp = () => {
-                    return Math.floor(Date.now() / 1000);
-                    // addComment.timeStam?
-                };
-        
-        // preventDefault() - for the form not to refresh 
-        //         <div class="commentImageContainer">
-        //             <img src="" alt=""></img>
-        //         </div>
-        //        <div class="commentContent">
-        //              <aside> {/* ${dateOfComment} by {nameInput} */}
-        //              </aside>
-        //              <blockquote>
-        //                   {/* ${userMessageInput} */}
-        //               </blockquote>
-        //         </div> 
-    // Alert "Comment Added "
-
-
+// Comment Section - ADD FORM INPUT INTO COMMEND SECTION
     // Select Items 
-                // Where to add? 
-                // Comment container 
-
-    // Functions 
-    const addComment = (event) => {
-        event.preventDefault();
-        console.log(event);
+        // Where to add? 
+            // Comment container 
+            // Target the button 
+            const postCommentButton = document.querySelector('.formButton button');
+            console.log(postCommentButton);
+            // Grab the user input - form 
+            const blogFormElement = document.querySelector(".blogForm")
+            console.log(blogFormElement);
+        
+        // Functions 
+        const addComment = (event) => {
+            event.preventDefault();
+            console.log(event);
 
         // Grab the comment info 
             // Name
