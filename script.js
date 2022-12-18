@@ -33,7 +33,6 @@
     // ADDING A COMMENT + PICTURE TO THE COMMENT SECTION
         //User Inputs the comment into the "Message Area"- when the user submits the form 
             // Event Listener on the "post comment" button 
-
                 // prevent default 
                 // Registering Event 
                 // Target: HTML element 95%
@@ -99,7 +98,7 @@
 
     // Select Items 
                 // Where to add? 
-                const containerToAppend = document.querySelector('.comment3')
+                // Comment container 
 
     // Functions 
     const addComment = (event) => {
@@ -122,6 +121,40 @@
 
         // Log when the information is available 
             if (userNameContent && userEmailContent && userCommentContent) {
+                 // TimeStamp 
+                        const timeOfPost = new Date();
+                        console.log(timeOfPost);
+
+                       console.log(timeOfPost.getTime());
+                       const epochTime = new Date(timeOfPost);
+                       console.log(epochTime);
+
+                    // Get date components Ready 
+                        // Year 
+                        const postYear = new Date().getFullYear();
+                        console.log(postYear);
+                        // Month 
+                        const options = {
+                            weekday: "long",
+                        };
+
+                        const postDay = new Intl.DateTimeFormat("en-US", options).format(new Date());
+                        console.log(postDay);
+
+                        const options2 = {
+                            month: "long",
+                        }
+
+                        const postMonth = new Intl.DateTimeFormat("en-US", options2).format(new Date());
+                        console.log(postMonth);
+
+                        // Date
+                        const postDate = new Date().getDate();
+                        console.log(postDate);
+
+                        const finalPostDate = `${postDay} ${postMonth} ${postDate}, ${postYear}`;
+                        console.log(finalPostDate);
+
                 // Create a div image container 
                 const commentImageElement = document.createElement('div');
                     commentImageElement.classList.add('commentImageContainer');
@@ -131,7 +164,6 @@
 
                     // Append the image to Image container 
                     commentImageElement.append(imageElement);
-                // console.log(commentImageElement);
 
                 // Create comment container 
                 const commentContainer = document.createElement('div');
@@ -142,16 +174,15 @@
                     commentContentElement.classList.add('commentContent');
 
                     const asideElement = document.createElement('aside');
-                        asideElement.append(`by ${userNameContent}`);
-                        console.log(asideElement)
-;
+                        asideElement.append(`${finalPostDate} by ${userNameContent}`);
+                        console.log(asideElement);
+                        
                     const blockquoteElement = document.createElement('blockquote');
                         blockquoteElement.append(`${userCommentContent}`);
 
                     // Append the aside and blockquote element to comment content div 
                     commentContentElement.appendChild(asideElement);
                     commentContentElement.appendChild(blockquoteElement);
-                    // console.log(commentContentElement);
                 
                 // Append the image container and user input content to comment div
                 commentContainer.appendChild(commentImageElement);
@@ -159,11 +190,8 @@
 
                 // Append comment div to commentsContainer 
                 const containerToAppend = document.querySelector('.commentsContainer');
-
                 containerToAppend.appendChild(commentContainer);
 
-
-                // console.log(containerToAppend);
             }
         // Reset The Input for the User 
             userName.value = '';
