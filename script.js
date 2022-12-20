@@ -1,6 +1,6 @@
 /* Pseudo Code */
 
-  // Hamburger Menu - JS 
+// Hamburger Menu - JS 
     // CSS - @media(max-width:850px);
         // Nav Bar styling (visibility: hidden)
         // Showing State Styling (.linkActive)
@@ -12,39 +12,34 @@
         // The navigation appears in transition 
             // Select the element want to appear 
             // Original state is not appearing 
-                // add a class to apear and add that class? .linkAppear 
+                // add a class to apear and add that class? .linkAppear (added on the CSS page )
                 // if the class is present --> on click, remove the class so it dissapears
                 // else, add the class 
                 const toggleButton =  document.querySelector('.hamburgerMenu');
 
                 function toggleNav () {
                     const navMenu = document.querySelectorAll('.desktopNav');
-                    navMenu.forEach( ul => ul.classList.toggle('linkActive'));
+                    navMenu.forEach( (ul) => {
+                        ul.classList.toggle('linkActive')
+                    });
                 } 
 
                 toggleButton.addEventListener('click', toggleNav);
 
 
 
- 
-
-    
-    
-
-
-
-
 // Comment Section - ADD FORM INPUT INTO COMMEND SECTION
     // Select Items 
-        // Where to add? 
-            // Comment container 
-            // Target the button 
-            const postCommentButton = document.querySelector('.formButton button');
-            console.log(postCommentButton);
-            // Grab the user input - form 
-            const blogFormElement = document.querySelector(".blogForm")
-            console.log(blogFormElement);
-        
+    const postCommentButton = document.querySelector('.formButton button');
+    console.log(postCommentButton);
+    // Grab the user input - form 
+    const blogFormElement = document.querySelector(".blogForm")
+    console.log(blogFormElement);
+    
+    // Where to add? 
+        // Comment container 
+        // Target the button 
+
         // Functions 
         const addComment = (event) => {
             event.preventDefault();
@@ -66,7 +61,7 @@
 
         // Log when the information is available 
             if (userNameContent && userEmailContent && userCommentContent) {
-                 // TimeStamp 
+                 // TimeStamp of post
                         const timeOfPost = new Date();
                         console.log(timeOfPost);
 
